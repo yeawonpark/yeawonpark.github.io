@@ -1,2031 +1,440 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yeawon Park — Social Media &amp; Marketing Manager</title>
-<meta name="description" content="Yeawon (Yewon) Park — NYC social media &amp; marketing manager. Short-form video, paid social and analytics for restaurant and F&amp;B brands.">
-<meta property="og:title" content="Yeawon Park — Social Media &amp; Marketing Manager">
-<meta property="og:description" content="Short-form video, paid social and analytics for NYC restaurant brands. Top reel 290K views; 6-episode series ~600K views.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yeawon Park — Social & Content Marketing, New York</title>
+<meta name="description" content="Yeawon Park plans, shoots and scales short-form content for food, beauty, fashion and tourism brands in New York — from the first frame to the paid campaign and the weekly numbers.">
+<meta property="og:title" content="Yeawon Park — Social & Content Marketing">
+<meta property="og:description" content="Short-form stories that bring customers through the door.">
 <meta property="og:image" content="https://yeawonpark.github.io/media/anto-bap.jpg">
-<meta property="og:url" content="https://yeawonpark.github.io/">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --ink:#241334;
-    --paper:#edebe2;
-    --coral:#e3a323;
-    --cobalt:#2451ff;
-    --mute:rgba(244,241,234,0.6);
-    --line: rgba(244,241,234,0.16);
-    --line-light: rgba(244,241,234,0.18);
-  }
+:root{
+  --paper:#F4F1EA; --paper-2:#ECE6DA; --ink:#2B1D33; --ink-2:#5E4E66; --ink-3:#8C7F92;
+  --brass:#A8843A; --brass-soft:#C9A45C; --line:rgba(43,29,51,.14);
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:500}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.12}
+h2{font-size:clamp(32px,4vw,48px)}
+h3{font-size:clamp(24px,2.6vw,32px)}
+.muted{color:var(--ink-2)}
 
-  *{margin:0;padding:0;box-sizing:border-box;}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+nav .name{font-family:var(--serif);font-size:20px;text-decoration:none}
+nav ul{display:flex;gap:28px;list-style:none;font-size:14px}
+nav ul a{text-decoration:none;color:var(--ink-2)}
+nav ul a:hover{color:var(--ink)}
 
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
-  }
+/* hero */
+.hero{padding:88px 0 96px;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:64px;align-items:center}
+.hero h1{font-size:clamp(40px,5.6vw,72px);margin:20px 0 24px}
+.hero h1 em{font-style:italic;color:var(--brass)}
+.hero .lede{font-size:18px;color:var(--ink-2);max-width:560px}
+.hero .now{margin-top:28px;font-size:14px;color:var(--ink-2);display:flex;align-items:center;gap:10px}
+.hero .now::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brass)}
+.hero-media{position:relative;justify-self:end;width:100%;max-width:340px}
+.hero-media video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:4px}
+.hero-media figcaption{font-size:13px;color:var(--ink-2);margin-top:12px;display:flex;justify-content:space-between}
+.hero-media figcaption b{font-weight:500;color:var(--ink)}
 
-  body{
-    background:var(--ink);
-    color:var(--paper);
-    font-family:'Inter', sans-serif;
-    line-height:1.5;
-    overflow-x:hidden;
-  }
+.proof{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
+.proof div{padding:36px 28px 40px;border-right:1px solid var(--line)}
+.proof div:last-child{border-right:0}
+.proof b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(36px,4vw,52px);line-height:1;color:var(--ink)}
+.proof span{display:block;margin-top:12px;font-size:14px;color:var(--ink-2);max-width:220px}
 
-  a{color:inherit;}
-  ::selection{background:var(--coral); color:var(--paper);}
+/* sections */
+section{padding:112px 0}
+.sec-head{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;margin-bottom:64px}
+.sec-head h2{max-width:720px}
 
-  :focus-visible{
-    outline:2px solid var(--coral);
-    outline-offset:3px;
-  }
+/* cases */
+.case{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;padding:64px 0;border-top:1px solid var(--line)}
+.case-meta{font-size:13px;color:var(--ink-2);line-height:1.8}
+.case-meta .num{font-family:var(--serif);font-size:40px;color:var(--brass);line-height:1;margin-bottom:16px}
+.case-meta b{display:block;color:var(--ink);font-weight:500}
+.case h3{margin-bottom:16px;max-width:760px}
+.case .intro{font-size:17px;color:var(--ink-2);max-width:720px;margin-bottom:40px}
+.brands{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:40px}
+.brand{background:var(--paper-2);padding:28px;border-radius:4px}
+.brand h4{font-family:var(--serif);font-weight:400;font-size:22px;margin-bottom:4px}
+.brand .sub{font-size:13px;color:var(--ink-2);margin-bottom:20px}
+.stat-list{list-style:none}
+.stat-list li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2);align-items:baseline}
+.stat-list li b{font-family:var(--serif);font-weight:400;font-size:24px;color:var(--ink);line-height:1.1}
+.strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-bottom:36px;align-items:start}
+.strip figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px}
+.strip figcaption{font-size:12px;color:var(--ink-3);margin-top:8px;line-height:1.4}
+.feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px;padding:32px;border:1px solid var(--line);border-radius:4px;margin-bottom:40px;align-items:center}
+.feature img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px}
+.feature .eyebrow{margin-bottom:10px}
+.feature h4{font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:20px}
+.phases{display:grid;gap:14px;font-size:15px;color:var(--ink-2)}
+.phases b{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);font-weight:500;margin-bottom:2px}
+.did{display:flex;flex-wrap:wrap;gap:8px}
+.did span{font-size:13px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--ink-2)}
 
-  .mono{
-    font-family:'JetBrains Mono', monospace;
-    letter-spacing:0.02em;
-  }
+.films{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:12px;margin-bottom:24px;align-items:end}
+.films figure .frame{position:relative;background:var(--ink);border-radius:3px;overflow:hidden}
+.films .wide .frame{aspect-ratio:16/9}
+.films .tall .frame{aspect-ratio:9/16}
+.films iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.films figcaption{font-size:12px;color:var(--ink-3);margin-top:8px;line-height:1.4}
+.films figcaption b{color:var(--ink);font-weight:500;display:block;font-size:13px}
+.kit{font-size:14px;color:var(--ink-2);margin-bottom:40px}
+.kit b{color:var(--ink);font-weight:500}
 
-  /* ===== TIMELINE SCRUBBER NAV ===== */
-  .scrubber{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index:100;
-    background:var(--ink);
-    border-bottom:1px solid var(--line-light);
-  }
-  .scrubber-track{
-    position:relative;
-    display:flex;
-    height:44px;
-    overflow-x:auto;
-    scrollbar-width:none;
-  }
-  .scrubber-track::-webkit-scrollbar{display:none;}
-  .scrubber-tick{
-    flex:1 0 auto;
-    display:flex;
-    align-items:center;
-    gap:8px;
-    padding:0 18px;
-    background:none;
-    border:none;
-    border-right:1px solid var(--line-light);
-    color:rgba(244,241,234,0.55);
-    font-size:11px;
-    cursor:pointer;
-    white-space:nowrap;
-    transition:color 0.2s ease;
-  }
-  .scrubber-tick:hover{color:var(--paper);}
-  .scrubber-tick.active{color:var(--coral);}
-  .scrubber-tick .dot{
-    width:6px;height:6px;border-radius:50%;
-    background:currentColor;
-    flex-shrink:0;
-  }
-  .scrubber-playhead{
-    position:absolute;
-    bottom:0; left:0;
-    height:2px;
-    background:var(--coral);
-    width:0%;
-    transition:width 0.1s linear;
-  }
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:40px}
+.gallery figure img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px}
+.gallery figcaption{font-size:12px;color:var(--ink-3);margin-top:8px}
 
-  section{
-    padding:120px 8vw 100px;
-    position:relative;
-    border-top:1px solid rgba(244,241,234,0.45);
-  }
-  .hero{border-top:none;}
+.strip-label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);font-weight:500;margin:0 0 12px}
+.tile{all:unset;cursor:pointer;display:block;position:relative}
+.tile img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;transition:opacity .2s}
+.tile:hover img{opacity:.85}
+.tile:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.tile .play{position:absolute;top:10px;right:10px;width:28px;height:28px;border-radius:50%;background:rgba(43,29,51,.72)}
+.tile .play::after{content:"";position:absolute;left:11px;top:8px;border-left:9px solid var(--paper);border-top:6px solid transparent;border-bottom:6px solid transparent}
+.tile .cap{display:block;font-size:12px;color:var(--ink-3);margin-top:8px;line-height:1.4}
+.tile .cap b{display:block;font-family:var(--serif);font-weight:400;font-size:20px;color:var(--ink);line-height:1.1;margin-bottom:2px}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(27,21,32,.92);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.open{display:flex}
+.lb video,.lb img{max-height:88vh;max-width:min(92vw,560px);border-radius:4px;background:#000}
+.lb-close{all:unset;cursor:pointer;position:absolute;top:18px;right:24px;color:var(--paper);font-size:14px;letter-spacing:.1em}
+.films video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:var(--ink)}
 
-  .eyebrow{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    color:var(--coral);
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin-bottom:18px;
-  }
-  .eyebrow .timecode{color:var(--mute);}
+/* experience */
+.xp{list-style:none;border-top:1px solid var(--line)}
+.xp li{display:grid;grid-template-columns:200px minmax(0,1.1fr) minmax(0,1.4fr);gap:32px;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.xp .yr{font-size:14px;color:var(--ink-3)}
+.xp .co{font-family:var(--serif);font-size:22px;line-height:1.2}
+.xp .co small{display:block;font-family:var(--sans);font-size:13px;color:var(--brass);margin-top:4px;letter-spacing:.02em}
+.xp .what{font-size:15px;color:var(--ink-2)}
 
-  .section-eyebrow{
-    font-size:16px;
-    letter-spacing:0.1em;
-    margin-bottom:20px;
-  }
-  .branding-credit{
-    font-family:'JetBrains Mono', monospace;
-    font-size:28px;
-    letter-spacing:0.03em;
-    color:var(--paper);
-    margin-bottom:40px;
-  }
-  .branding-credit .brand-name{
-    color:#F2A93C;
-    font-weight:600;
-  }
-  .role-title{
-    display:block;
-    font-family:'JetBrains Mono', monospace;
-    font-size:14px;
-    color:var(--mute);
-    margin-top:6px;
-    margin-bottom:18px;
-  }
+/* how */
+.how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.how div{border-top:2px solid var(--ink);padding-top:24px}
+.how h4{font-family:var(--serif);font-weight:400;font-size:24px;margin:8px 0 12px}
+.how p{font-size:15px;color:var(--ink-2);margin-bottom:16px}
+.how .tools{font-size:13px;color:var(--ink-3)}
 
-  h1,h2,h3{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    letter-spacing:-0.005em;
-  }
+/* contact */
+.contact{background:var(--paper-2);text-align:left}
+.contact h2{font-size:clamp(36px,5vw,64px);max-width:860px;margin:20px 0 40px}
+.links{display:flex;flex-wrap:wrap;gap:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:500;border:1px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{opacity:.85}
+.contact .loc{margin-top:28px;font-size:14px;color:var(--ink-2)}
+footer{padding:28px 0;font-size:12px;color:var(--ink-3);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between}
 
-  /* ===== HERO ===== */
-  .hero{
-    background:var(--ink);
-    color:var(--paper);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding:200px 8vw 140px;
-  }
-  .hero h1{
-    font-size:clamp(54px, 11vw, 132px);
-    line-height:0.92;
-    margin-bottom:20px;
-  }
-  .hero .job-title{
-    font-family:'JetBrains Mono', monospace;
-    font-size:clamp(13px, 1.4vw, 15px);
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    color:var(--coral);
-    margin-bottom:28px;
-  }
-  .hero .role{
-    font-size:clamp(16px, 2vw, 22px);
-    color:rgba(244,241,234,0.7);
-    font-weight:500;
-    margin-bottom:36px;
-    max-width:640px;
-  }
-  .hero .role strong{color:var(--paper); font-weight:600;}
-
-  /* ===== SECTION HEADERS ===== */
-  .section-head{
-    margin-bottom:56px;
-    max-width:900px;
-  }
-  .section-head h2{
-    font-size:clamp(22px,2.6vw,32px);
-    margin-bottom:14px;
-    white-space:nowrap;
-  }
-  .section-head p{
-    color:var(--mute);
-    font-size:17px;
-  }
-  @media (max-width:760px){
-    .section-head h2{white-space:normal;}
-  }
-
-  /* ===== WORK: REELS CAROUSEL ===== */
-  .reel-frame video{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-  }
-  .reel-frame iframe{
-    position:absolute;
-    top:0;
-    left:-28%;
-    width:156%;
-    height:100%;
-    border:none;
-    display:block;
-  }
-
-  .reel-scroll{
-    display:flex;
-    gap:24px;
-    overflow-x:auto;
-    padding-bottom:16px;
-    scroll-snap-type:x mandatory;
-  }
-  .reel-card{
-    flex:0 0 240px;
-    scroll-snap-align:start;
-  }
-  .reel-frame{
-    width:240px;
-    height:426px;
-    border-radius:18px;
-    border:1px solid var(--line);
-    background:linear-gradient(160deg, var(--ink), #3a2350);
-    position:relative;
-    overflow:hidden;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 18px 36px -18px rgba(36,19,52,0.55);
-    transition:transform 0.35s ease, box-shadow 0.35s ease;
-  }
-  .reel-card:hover .reel-frame{
-    transform:translateY(-6px);
-    box-shadow:0 26px 46px -16px rgba(36,19,52,0.65);
-  }
-  .reel-frame.alt1{background:linear-gradient(160deg, var(--coral), #8a5e10);}
-  .reel-frame.alt2{background:linear-gradient(160deg, var(--cobalt), #1638b0);}
-  .reel-frame.alt3{background:linear-gradient(160deg, #4a3460, var(--ink));}
-
-  .reel-frame::before, .longform-frame::before{
-    content:'';
-    position:absolute; inset:0;
-    background:
-      radial-gradient(circle at 50% 28%, transparent 40%, rgba(0,0,0,0.4) 100%),
-      url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
-    mix-blend-mode:overlay;
-    opacity:0.6;
-    pointer-events:none;
-  }
-
-  .reel-tag{
-    position:absolute;
-    top:14px; left:14px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:10px;
-    color:rgba(244,241,234,0.85);
-    background:rgba(0,0,0,0.25);
-    padding:4px 8px;
-    border-radius:4px;
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-  }
-  .play-btn{
-    width:52px;height:52px;
-    border-radius:50%;
-    background:rgba(244,241,234,0.12);
-    border:1px solid rgba(244,241,234,0.45);
-    backdrop-filter:blur(6px);
-    box-shadow:0 6px 18px rgba(0,0,0,0.25);
-    display:flex;align-items:center;justify-content:center;
-    position:relative;
-    z-index:1;
-    transition:transform 0.3s ease;
-  }
-  .reel-card:hover .play-btn, .longform-card:hover .play-btn{
-    transform:scale(1.08);
-  }
-  .play-btn::after{
-    content:'';
-    border-left:13px solid var(--paper);
-    border-top:8px solid transparent;
-    border-bottom:8px solid transparent;
-    margin-left:4px;
-  }
-  .reel-meta{
-    margin-top:14px;
-  }
-  .reel-meta .views{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    color:var(--coral);
-    margin-bottom:4px;
-  }
-  .reel-meta h3{
-    font-size:16px;
-    margin-bottom:4px;
-  }
-  .reel-meta p{
-    font-size:13px;
-    color:var(--mute);
-  }
-  .company-tag{
-    font-family:'JetBrains Mono', monospace;
-    font-size:11px !important;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    color:var(--coral) !important;
-    margin-bottom:3px !important;
-  }
-
-  .hint-box{
-    margin-top:36px;
-    border:1px dashed var(--line);
-    border-radius:10px;
-    padding:16px 20px;
-    font-size:13px;
-    color:var(--mute);
-    max-width:680px;
-  }
-  .hint-box .mono{color:var(--coral);}
-
-  .subdivider{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin:64px 0 32px;
-  }
-  .subdivider .line{
-    flex:1;
-    height:1px;
-    background:var(--line);
-  }
-  .subdivider span{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    color:var(--mute);
-  }
-
-  .longform-grid{
-    display:flex;
-    gap:24px;
-    overflow-x:auto;
-    padding-bottom:16px;
-    scroll-snap-type:x mandatory;
-  }
-  .longform-card{
-    cursor:pointer;
-    display:block;
-    text-decoration:none;
-    color:inherit;
-    flex:0 0 360px;
-    scroll-snap-align:start;
-  }
-  .longform-frame{
-    aspect-ratio:16/9;
-    border-radius:14px;
-    border:1px solid var(--line);
-    background:linear-gradient(150deg, var(--ink), #3a2350);
-    position:relative;
-    overflow:hidden;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 18px 36px -18px rgba(36,19,52,0.55);
-    transition:transform 0.35s ease, box-shadow 0.35s ease;
-  }
-  .longform-frame iframe{
-    position:absolute;
-    top:-25%;
-    left:0;
-    width:100%;
-    height:150%;
-    border:none;
-    display:block;
-  }
-  .longform-card:hover .longform-frame{
-    transform:translateY(-6px);
-    box-shadow:0 26px 46px -16px rgba(36,19,52,0.65);
-  }
-  .longform-frame.lf-alt{background:linear-gradient(150deg, var(--cobalt), #1638b0);}
-  .longform-frame .play-btn{
-    width:60px;height:60px;
-  }
-  .longform-meta{margin-top:14px;}
-  .longform-meta .views{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    color:var(--coral);
-    margin-bottom:4px;
-  }
-  .longform-meta h3{font-size:17px; margin-bottom:4px;}
-  .longform-meta p{font-size:13px; color:var(--mute);}
-
-  /* ===== REBRAND PROJECT ===== */
-  .rebrand .section-head p{color:rgba(244,241,234,0.65);}
-
-  .case-block{
-    margin-bottom:72px;
-  }
-  .case-block:last-child{margin-bottom:0;}
-  .case-block .brand-header{
-    margin-bottom:24px;
-  }
-  .scope-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-bottom:40px;
-  }
-  .scope-tag{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    padding:8px 14px;
-    border:1px solid var(--line);
-    border-radius:30px;
-    color:rgba(244,241,234,0.8);
-    background:rgba(244,241,234,0.04);
-  }
-  .photo-group{
-    margin-bottom:40px;
-  }
-  .photo-group .group-label{margin-bottom:14px;}
-  .photo-pair{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:16px;
-  }
-  .photo-pair figure{
-    margin:0;
-    position:relative;
-    border-radius:24px;
-    overflow:hidden;
-    border:1px solid var(--line);
-  }
-  .photo-pair img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    cursor:pointer;
-    transition:transform 0.3s ease;
-  }
-  .photo-pair img:hover{transform:scale(1.03);}
-  .photo-pair figcaption{
-    position:absolute;
-    top:10px; left:10px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:10px;
-    letter-spacing:0.08em;
-    color:var(--paper);
-    background:rgba(21,21,27,0.6);
-    padding:4px 9px;
-    border-radius:4px;
-    text-transform:uppercase;
-  }
-  .photo-single{
-    border-radius:24px;
-    overflow:hidden;
-    border:1px solid var(--line);
-    max-width:560px;
-  }
-  .photo-single img{
-    width:100%;
-    display:block;
-    cursor:pointer;
-    transition:transform 0.3s ease;
-  }
-  .photo-single img:hover{transform:scale(1.03);}
-  @media (max-width:600px){
-    .photo-pair{grid-template-columns:1fr;}
-    .photo-trio{grid-template-columns:1fr;}
-  }
-  .photo-trio{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:16px;
-  }
-  .photo-trio figure{
-    margin:0;
-    position:relative;
-    border-radius:24px;
-    overflow:hidden;
-    border:1px solid var(--line);
-  }
-  .photo-trio img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    cursor:pointer;
-    transition:transform 0.3s ease;
-  }
-  .photo-trio img:hover{transform:scale(1.03);}
-
-  .process-gallery{
-    display:grid;
-    grid-template-columns:1.5fr 1fr;
-    gap:20px;
-  }
-  .process-gallery .wide-stack{
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-  }
-  .process-gallery .wide-stack figure{
-    margin:0;
-    position:relative;
-    border-radius:18px;
-    overflow:hidden;
-    border:1px solid var(--line);
-    aspect-ratio:16/7;
-  }
-  .process-gallery .wide-stack img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    cursor:pointer;
-    transition:transform 0.3s ease;
-  }
-  .process-gallery .wide-stack img:hover{transform:scale(1.03);}
-  .process-gallery .tall-pair{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-    align-self:start;
-  }
-  .process-gallery .tall-pair figure{
-    margin:0;
-    position:relative;
-    border-radius:18px;
-    overflow:hidden;
-    border:1px solid var(--line);
-    aspect-ratio:3/4;
-    background:rgba(244,241,234,0.04);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .process-gallery .tall-pair img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    display:block;
-    cursor:pointer;
-    transition:transform 0.3s ease;
-  }
-  .process-gallery .tall-pair img:hover{transform:scale(1.03);}
-  .process-gallery figcaption{
-    position:absolute;
-    top:10px; left:10px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:10px;
-    letter-spacing:0.08em;
-    color:var(--paper);
-    background:rgba(21,21,27,0.6);
-    padding:4px 9px;
-    border-radius:4px;
-    text-transform:uppercase;
-    z-index:1;
-  }
-  @media (max-width:760px){
-    .process-gallery{grid-template-columns:1fr;}
-  }
-
-  .client-block{
-    margin-bottom:48px;
-  }
-  .client-block:last-child{margin-bottom:0;}
-  .client-block .client-name{
-    font-family:'Fraunces', serif;
-    font-size:19px;
-    color:var(--paper);
-    margin-bottom:14px;
-  }
-  .client-placeholder{
-    border:1px dashed var(--line);
-    border-radius:14px;
-    padding:32px;
-    text-align:center;
-    color:var(--mute);
-    font-family:'JetBrains Mono', monospace;
-    font-size:13px;
-  }
-
-  .client-gallery{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:4px;
-    max-width:680px;
-    margin:0 auto;
-  }
-  .client-gallery .tile{
-    position:relative;
-    aspect-ratio:1/1;
-    overflow:hidden;
-    cursor:pointer;
-  }
-  .client-gallery img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    transition:transform 0.3s ease;
-  }
-  .client-gallery .tile:hover img{transform:scale(1.05);}
-  @media (max-width:600px){
-    .client-gallery{grid-template-columns:repeat(3, 1fr);}
-  }
-
-  .compare-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:24px;
-  }
-  .compare-block .client-name{
-    font-family:'Fraunces', serif;
-    font-size:16px;
-    color:var(--paper);
-    margin-bottom:10px;
-  }
-  .compare-slider{
-    position:relative;
-    width:100%;
-    aspect-ratio:16/10;
-    border-radius:14px;
-    overflow:hidden;
-    border:1px solid var(--line);
-    cursor:ew-resize;
-    user-select:none;
-    background:var(--ink);
-  }
-  .compare-slider img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:top;
-    pointer-events:none;
-  }
-  .compare-slider .compare-after{
-    clip-path:inset(0 0 0 50%);
-  }
-  .compare-slider .compare-handle{
-    position:absolute;
-    top:0; bottom:0;
-    left:50%;
-    width:2px;
-    background:rgba(244,241,234,0.8);
-    transform:translateX(-1px);
-    pointer-events:none;
-  }
-  .compare-slider .compare-knob{
-    position:absolute;
-    top:50%; left:50%;
-    width:34px; height:34px;
-    border-radius:50%;
-    background:var(--paper);
-    transform:translate(-50%,-50%);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 4px 14px rgba(0,0,0,0.4);
-    pointer-events:none;
-  }
-  .compare-slider .compare-knob::after{
-    content:'↔';
-    color:var(--ink);
-    font-size:15px;
-    font-weight:700;
-  }
-  .compare-slider .compare-label{
-    position:absolute;
-    top:10px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:10px;
-    letter-spacing:0.08em;
-    color:var(--paper);
-    background:rgba(21,21,27,0.6);
-    padding:4px 9px;
-    border-radius:4px;
-    text-transform:uppercase;
-    pointer-events:none;
-  }
-  .compare-slider .label-before{left:10px;}
-  .compare-slider .label-after{right:10px;}
-  @media (max-width:600px){
-    .compare-grid{grid-template-columns:1fr;}
-  }
-
-  .rec-dot{
-    display:inline-block;
-    width:8px;
-    height:8px;
-    border-radius:50%;
-    background:var(--coral);
-    margin-right:8px;
-    animation:rec-blink 1.4s infinite;
-    vertical-align:middle;
-  }
-  @keyframes rec-blink{
-    0%,100%{opacity:1;}
-    50%{opacity:0.15;}
-  }
-
-  .fade-text{
-    opacity:0.22;
-    filter:brightness(0.45);
-    transition:opacity 0.9s ease, filter 0.9s ease;
-  }
-  .fade-text.is-visible{
-    opacity:1;
-    filter:brightness(1);
-  }
-
-  .lightbox-overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(15,8,22,0.92);
-    display:none;
-    align-items:center;
-    justify-content:center;
-    z-index:1000;
-    padding:40px;
-    cursor:zoom-out;
-  }
-  .lightbox-overlay.active{display:flex;}
-  .lightbox-overlay img{
-    max-width:90vw;
-    max-height:90vh;
-    border-radius:16px;
-    box-shadow:0 30px 70px rgba(0,0,0,0.5);
-    cursor:default;
-  }
-  .lightbox-caption{
-    position:absolute;
-    bottom:36px;
-    left:50%;
-    transform:translateX(-50%);
-    font-family:'Fraunces', serif;
-    font-size:18px;
-    color:var(--paper);
-    background:rgba(21,21,27,0.7);
-    padding:8px 20px;
-    border-radius:30px;
-    display:none;
-  }
-  .lightbox-caption.active{display:block;}
-  .lightbox-close{
-    position:absolute;
-    top:28px; right:36px;
-    color:var(--paper);
-    font-family:'JetBrains Mono', monospace;
-    font-size:14px;
-    letter-spacing:0.08em;
-    background:rgba(244,241,234,0.1);
-    border:1px solid rgba(244,241,234,0.3);
-    border-radius:30px;
-    padding:8px 18px;
-    cursor:pointer;
-  }
-  .photo-trio figcaption{
-    position:absolute;
-    top:10px; left:10px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:10px;
-    letter-spacing:0.08em;
-    color:var(--paper);
-    background:rgba(21,21,27,0.6);
-    padding:4px 9px;
-    border-radius:4px;
-    text-transform:uppercase;
-  }
-
-  .swatch-strip{
-    display:flex;
-    align-items:center;
-    gap:0;
-    margin-bottom:60px;
-    border-radius:14px;
-    overflow:hidden;
-    border:1px solid var(--line-light);
-  }
-  .swatch{
-    flex:1;
-    height:90px;
-    display:flex;
-    align-items:flex-end;
-    padding:10px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:10px;
-    color:rgba(244,241,234,0.7);
-  }
-  .swatch-arrow{
-    padding:0 22px;
-    font-size:20px;
-    color:var(--coral);
-    background:var(--ink);
-  }
-
-  .case-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:36px;
-  }
-  .case-grid .phase{
-    border-top:1px solid var(--line-light);
-    padding-top:20px;
-  }
-  .phase-list{
-    list-style:none;
-    margin-top:12px;
-    padding:0;
-  }
-  .phase-list li{
-    position:relative;
-    padding-left:18px;
-    margin-bottom:8px;
-    color:rgba(244,241,234,0.7);
-    font-size:15px;
-  }
-  .phase-list li::before{
-    content:'—';
-    position:absolute;
-    left:0;
-    color:var(--coral);
-  }
-  .phase-list strong{
-    color:var(--paper);
-    font-weight:600;
-  }
-  .case-grid .phase .eyebrow{margin-bottom:14px;}
-
-  .case-grid .phase p{
-    color:rgba(244,241,234,0.7);
-    font-size:15px;
-  }
-
-  /* ===== SOCIAL GRID ===== */
-  .brand-block{
-    margin-bottom:64px;
-  }
-  .brand-block:last-child{margin-bottom:0;}
-  .social-layout{
-    display:grid;
-    grid-template-columns:762px 1fr;
-    gap:48px;
-    align-items:start;
-  }
-  .what-i-did{
-    padding-top:4px;
-  }
-  .what-i-did h4{
-    font-family:'JetBrains Mono', monospace;
-    font-size:11px;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    color:var(--coral);
-    margin-bottom:16px;
-  }
-  .what-i-did ul{
-    list-style:none;
-    padding:0;
-    margin:0;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-  }
-  .what-i-did li{
-    font-size:15px;
-    color:rgba(244,241,234,0.8);
-    padding-left:16px;
-    position:relative;
-  }
-  .what-i-did li::before{
-    content:'—';
-    position:absolute;
-    left:0;
-    color:var(--coral);
-  }
-  @media (max-width:760px){
-    .social-layout{grid-template-columns:1fr;}
-  }
-  .brand-header{
-    display:flex;
-    align-items:baseline;
-    gap:14px;
-    margin-bottom:20px;
-    flex-wrap:wrap;
-  }
-  .brand-header h3{
-    font-size:20px;
-  }
-  .brand-header .role{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    color:var(--mute);
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-  }
-  .brand-body{
-    display:grid;
-    grid-template-columns:auto 1fr;
-    gap:40px;
-    align-items:start;
-  }
-  .brand-what{
-    padding-top:8px;
-  }
-  .brand-what .what-label{
-    font-family:'JetBrains Mono', monospace;
-    font-size:11px;
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    color:var(--coral);
-    margin-bottom:14px;
-  }
-  .brand-what ul{
-    list-style:none;
-    padding:0;
-    margin:0;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-  }
-  .brand-what li{
-    font-size:15px;
-    color:rgba(244,241,234,0.8);
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-  .brand-what li::before{
-    content:'—';
-    color:var(--coral);
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    flex-shrink:0;
-  }
-  @media (max-width:760px){
-    .brand-body{grid-template-columns:1fr;}
-  }
-
-  .post-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 250px);
-    gap:6px;
-    width:762px;
-  }
-  .post-tile{
-    aspect-ratio:1/1;
-    position:relative;
-    overflow:hidden;
-    cursor:pointer;
-  }
-  .post-tile .fill{
-    position:absolute; inset:0;
-    background:#3a2350;
-  }
-
-  /* GOLDMISS — pink, gold, sky blue dessert-shop palette */
-  .post-grid--goldmiss .post-tile:nth-child(1) .fill{background:#F4A8B8;}
-  .post-grid--goldmiss .post-tile:nth-child(2) .fill{background:#F5D87A;}
-  .post-grid--goldmiss .post-tile:nth-child(3) .fill{background:#B8DCE8;}
-  .post-grid--goldmiss .post-tile:nth-child(4) .fill{background:#F0E6D2;}
-  .post-grid--goldmiss .post-tile:nth-child(5) .fill{background:#F4A8B8;}
-  .post-grid--goldmiss .post-tile:nth-child(6) .fill{background:#B8DCE8;}
-
-  /* ZILLABEAU — vivid, beauty-industry palette */
-  .post-grid--zillabeau .post-tile:nth-child(1) .fill{background:var(--coral);}
-  .post-grid--zillabeau .post-tile:nth-child(2) .fill{background:#c0488a;}
-  .post-grid--zillabeau .post-tile:nth-child(3) .fill{background:var(--cobalt);}
-  .post-grid--zillabeau .post-tile:nth-child(4) .fill{background:#4a3460;}
-  .post-grid--zillabeau .post-tile:nth-child(5) .fill{background:#c0488a;}
-  .post-grid--zillabeau .post-tile:nth-child(6) .fill{background:var(--coral);}
-
-  /* ATNOW — calm, natural travel palette */
-  .post-grid--atnow .post-tile:nth-child(1) .fill{background:#5c7a5e;}
-  .post-grid--atnow .post-tile:nth-child(2) .fill{background:#b0a888;}
-  .post-grid--atnow .post-tile:nth-child(3) .fill{background:#3e5546;}
-  .post-grid--atnow .post-tile:nth-child(4) .fill{background:#b0a888;}
-  .post-grid--atnow .post-tile:nth-child(5) .fill{background:#5c7a5e;}
-  .post-grid--atnow .post-tile:nth-child(6) .fill{background:#3e5546;}
-
-  .post-tile .overlay{
-    position:absolute; inset:0;
-    background:rgba(21,21,27,0.78);
-    color:var(--paper);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:14px;
-    font-size:12px;
-    opacity:0;
-    transition:opacity 0.2s ease;
-  }
-  .post-tile:hover .overlay{opacity:1;}
-
-  /* ===== TOOLKIT ===== */
-  .tag-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-bottom:36px;
-  }
-  .group-label{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    letter-spacing:0.1em;
-    text-transform:uppercase;
-    color:var(--mute);
-    margin-bottom:14px;
-  }
-  .tag{
-    font-family:'JetBrains Mono', monospace;
-    font-size:13px;
-    padding:10px 16px;
-    border:1px solid var(--line);
-    border-radius:30px;
-    color:var(--paper);
-    background:rgba(244,241,234,0.05);
-  }
-
-  /* ===== CONTACT ===== */
-  .contact{
-    min-height:60vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-  }
-  .contact h2{
-    font-size:clamp(38px,6vw,68px);
-    max-width:680px;
-    margin-bottom:44px;
-    line-height:1.05;
-  }
-  .contact-list{
-    display:flex;
-    flex-direction:column;
-    gap:24px;
-  }
-  .contact-actions{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-  }
-  .contact-actions a{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:14px;
-    color:var(--ink);
-    background:var(--paper);
-    text-decoration:none;
-    padding:14px 24px;
-    border-radius:30px;
-    transition:background 0.2s ease, transform 0.2s ease;
-  }
-  .contact-actions a:hover{
-    background:var(--coral);
-    transform:translateY(-2px);
-  }
-  .contact-location{
-    font-family:'JetBrains Mono', monospace;
-    font-size:13px;
-    color:var(--mute);
-  }
-
-  footer{
-    padding:24px 8vw;
-    background:var(--ink);
-    color:rgba(244,241,234,0.4);
-    font-family:'JetBrains Mono', monospace;
-    font-size:11px;
-    border-top:1px solid var(--line-light);
-  }
-
-  @media (max-width:760px){
-    section{padding:90px 6vw 70px;}
-    .case-grid{grid-template-columns:1fr; gap:28px;}
-    .scrubber-tick{font-size:10px; padding:0 12px;}
-  }
-
-  /* ===== HERO TITLE ANIMATION ===== */
-  @keyframes heroWordIn {
-    from { opacity:0; transform:translateY(60px) skewY(5deg); }
-    to   { opacity:1; transform:translateY(0)    skewY(0deg); }
-  }
-  .hero-word {
-    display:inline-block;
-    opacity:0;
-    animation:heroWordIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
-
-  /* ===== SECTION HEADER REVEAL ===== */
-  .reveal-text {
-    opacity:0;
-    transform:translateY(40px);
-    transition:opacity 1s cubic-bezier(0.16,1,0.3,1), transform 1s cubic-bezier(0.16,1,0.3,1);
-  }
-  .reveal-text.is-visible {
-    opacity:1;
-    transform:translateY(0);
-  }
-
-  /* ===== PARALLAX CARDS ===== */
-  .reel-card, .longform-card {
-    will-change:transform;
-  }
-
-  /* ===== QB HOSPITALITY ADDITIONS ===== */
-  .series-note{
-    font-family:'JetBrains Mono', monospace;
-    font-size:13px;
-    color:var(--mute);
-    margin:-28px 0 28px;
-  }
-  .series-note strong{color:var(--coral); font-weight:500;}
-  .views .paid{color:var(--mute);}
-  .results{margin-bottom:28px;}
-  .results ul{gap:12px;}
-  .results li strong{color:var(--paper); font-weight:600;}
-  @media (max-width:1180px){
-    .social-layout{grid-template-columns:1fr; gap:32px;}
-    .what-i-did{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
-    .what-i-did .results{margin-bottom:0;}
-  }
-  @media (max-width:820px){
-    .post-grid{grid-template-columns:repeat(3,1fr); width:100%;}
-    .what-i-did{grid-template-columns:1fr;}
-  }
-
+@media (max-width:1000px){
+  .strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .films{grid-template-columns:1fr 1fr 1fr}
+  .films .wide{grid-column:1/-1}
+}
+@media (max-width:820px){
+  .wrap{padding:0 20px}
+  nav ul{gap:16px;font-size:13px}
+  nav ul li.hide-sm{display:none}
+  .hero{padding:48px 0 56px}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .hero-media{justify-self:start;max-width:260px}
+  .proof{grid-template-columns:1fr 1fr}
+  .proof div{padding:24px 20px 28px}
+  .proof div:nth-child(2){border-right:0}
+  .proof div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  section{padding:72px 0}
+  .sec-head,.case{grid-template-columns:1fr;gap:16px}
+  .sec-head{margin-bottom:40px}
+  .case{padding:48px 0}
+  .case-meta .num{font-size:32px;margin-bottom:8px}
+  .brands{grid-template-columns:1fr}
+  .feature{grid-template-columns:1fr;padding:20px}
+  .feature img{max-width:240px}
+  .gallery{grid-template-columns:1fr 1fr}
+  .xp li{grid-template-columns:1fr;gap:6px}
+  .how{grid-template-columns:1fr;gap:40px}
+  footer .wrap{flex-direction:column;gap:6px}
+}
+@media (max-width:560px){
+  nav .name{white-space:nowrap;font-size:18px}
+  nav ul li:not(:last-child){display:none}
+  .proof{grid-template-columns:1fr}
+  .proof div{border-right:0;border-bottom:1px solid var(--line)}
+  .proof div:last-child{border-bottom:0}
+  .strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .films{grid-template-columns:1fr 1fr}
+  .stat-list li{grid-template-columns:84px minmax(0,1fr)}
+}
 </style>
 </head>
 <body>
 
-  <!-- ===== TIMELINE SCRUBBER NAV ===== -->
-  <nav class="scrubber">
-    <div class="scrubber-track" id="scrubberTrack">
-      <button class="scrubber-tick" data-target="hero"><span class="dot"></span>00:00 — INTRO</button>
-      <button class="scrubber-tick" data-target="work"><span class="dot"></span>00:01 — VIDEO WORK</button>
-      <button class="scrubber-tick" data-target="social"><span class="dot"></span>00:02 — SOCIAL</button>
-      <button class="scrubber-tick" data-target="rebrand"><span class="dot"></span>00:03 — BRANDING</button>
-      <button class="scrubber-tick" data-target="toolkit"><span class="dot"></span>00:04 — TOOLKIT</button>
-      <button class="scrubber-tick" data-target="contact"><span class="dot"></span>00:05 — CONTACT</button>
+<nav>
+  <div class="wrap">
+    <a class="name" href="#top">Yeawon Park</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Social &amp; Content Marketing · New York</div>
+      <h1>Short-form stories that bring customers <em>through the door.</em></h1>
+      <p class="lede">I plan, shoot and scale content for food, beauty, fashion and tourism brands — from the first frame to the paid campaign and the weekly numbers.</p>
+      <p class="now">Currently Social Media &amp; Marketing Manager, QB Hospitality</p>
     </div>
-    <div class="scrubber-playhead" id="playhead"></div>
-  </nav>
+    <figure class="hero-media">
+      <video src="media/anto-bap.mp4" poster="media/anto-bap.jpg" autoplay muted loop playsinline preload="metadata" aria-label="“Have you eaten?” reel for ANTO Korean Kitchen"></video>
+      <figcaption><span>“Have you eaten?” — ANTO</span><b>290K views</b></figcaption>
+    </figure>
+  </div>
+</header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="hero">
-    <h1><span class="hero-word" style="animation-delay:0.15s">Yeawon</span><br><span class="hero-word" style="animation-delay:0.4s">Park</span></h1>
-    <div class="job-title mono fade-text">Social Media &amp; Marketing Manager</div>
-    <p class="role">Running social and paid ads for two NYC restaurant brands at QB Hospitality — <strong>turning short-form stories into reach, reservations and store-opening demand.</strong></p>
-  </section>
+<div class="wrap">
+  <div class="proof">
+    <div><b>~600K</b><span>views on a 6-episode Korean food culture series</span></div>
+    <div><b>6.5x</b><span>weekly Instagram reach for a 9-location bakery in 4 weeks</span></div>
+    <div><b>+8%</b><span>year-over-year bookings from our own channels while total covers fell</span></div>
+    <div><b>7x</b><span>Instagram followers in 4 months after a full brand renewal</span></div>
+  </div>
+</div>
 
-  <!-- ===== WORK: REELS & SHORT-FORM VIDEO ===== -->
-  <section id="work">
-    <div class="eyebrow section-eyebrow fade-text"><span class="rec-dot"></span><span class="timecode mono">00:01</span> VIDEO WORK</div>
-    <div class="section-head">
-      <h2>Visual stories that spark engagement</h2>
-    </div>
-
-    <div class="subdivider"><div class="line"></div><span>QB Hospitality — 2026</span><div class="line"></div></div>
-    <p class="series-note">Korean Food Culture series for ANTO: <strong>6 episodes · ~600K views</strong> across 4 platforms</p>
-    <div class="reel-scroll">
-      <div class="reel-card">
-        <div class="reel-frame">
-          <video src="media/anto-bap.mp4" poster="media/anto-bap.jpg" controls playsinline preload="none" aria-label="“Have you eaten?”"></video>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">290K views</div>
-          <h3>“Have you eaten?”</h3>
-          <p class="company-tag mono">ANTO KOREAN KITCHEN · 2026</p>
-          <p>Instagram · TikTok · YouTube · Facebook</p>
-        </div>
-      </div>
-      <div class="reel-card">
-        <div class="reel-frame">
-          <video src="media/anto-baekkimchi.mp4" poster="media/anto-baekkimchi.jpg" controls playsinline preload="none" aria-label="Kimchi before it got spicy"></video>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">121K views <span class="paid">· incl. paid</span></div>
-          <h3>Kimchi before it got spicy</h3>
-          <p class="company-tag mono">ANTO KOREAN KITCHEN · 2026</p>
-          <p>Instagram · TikTok · YouTube · Facebook</p>
-        </div>
-      </div>
-      <div class="reel-card">
-        <div class="reel-frame">
-          <video src="media/angelina-princeton.mp4" poster="media/angelina-princeton.jpg" controls playsinline preload="none" aria-label="Princeton, we’re coming"></video>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">66K views</div>
-          <h3>Princeton, we’re coming</h3>
-          <p class="company-tag mono">ANGELINA BAKERY · 2026</p>
-          <p>Store-opening teaser · organic</p>
-        </div>
-      </div>
-      <div class="reel-card">
-        <div class="reel-frame">
-          <video src="media/anto-kimchicart.mp4" poster="media/anto-kimchicart.jpg" controls playsinline preload="none" aria-label="ANTO Signature Kimchi Cart"></video>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">80K views <span class="paid">· incl. paid</span></div>
-          <h3>ANTO Signature Kimchi Cart</h3>
-          <p class="company-tag mono">ANTO KOREAN KITCHEN · 2026</p>
-          <p>Instagram · TikTok · YouTube · Facebook</p>
-        </div>
-      </div>
-      <div class="reel-card">
-        <div class="reel-frame">
-          <video src="media/anto-onggi.mp4" poster="media/anto-onggi.jpg" controls playsinline preload="none" aria-label="Kimchi fridges before fridges"></video>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">65K views</div>
-          <h3>Kimchi fridges before fridges</h3>
-          <p class="company-tag mono">ANTO KOREAN KITCHEN · 2026</p>
-          <p>Instagram · TikTok · YouTube · Facebook</p>
-        </div>
-      </div>
-      <div class="reel-card">
-        <div class="reel-frame">
-          <video src="media/anto-banchan.mp4" poster="media/anto-banchan.jpg" controls playsinline preload="none" aria-label="Food you didn’t order"></video>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">53K views</div>
-          <h3>Food you didn’t order</h3>
-          <p class="company-tag mono">ANTO KOREAN KITCHEN · 2026</p>
-          <p>Instagram · TikTok · YouTube · Facebook</p>
-        </div>
-      </div>
-      <div class="reel-card">
-        <div class="reel-frame">
-          <video src="media/angelina-spooky.mp4" poster="media/angelina-spooky.jpg" controls playsinline preload="none" aria-label="It’s spooky season"></video>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">40K views</div>
-          <h3>It’s spooky season</h3>
-          <p class="company-tag mono">ANGELINA BAKERY · 2026</p>
-          <p>Instagram · TikTok · YouTube · Facebook</p>
-        </div>
-      </div>
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Selected work</div>
+      <h2>Three projects that show how I work — strategy, camera and brand.</h2>
     </div>
 
-    <div class="subdivider"><div class="line"></div><span>Earlier work</span><div class="line"></div></div>
-    <div class="reel-scroll">
-      <div class="reel-card">
-        <div class="reel-frame">
-          <iframe src="https://drive.google.com/file/d/1ZTBfCXQ9y7r9frxlwp_kFvLqt-2tRnhs/preview" allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">18K views</div>
-          <h3>1 Min Highlight</h3>
-          <p class="company-tag mono">SYNERIS PRODUCTION · 2025</p>
-          <p>Instagram Reel</p>
-        </div>
+    <!-- CASE 01 -->
+    <article class="case">
+      <div class="case-meta">
+        <div class="num">01</div>
+        <b>QB Hospitality</b>
+        Social Media &amp; Marketing Manager<br>2026 — Present<br>New York
       </div>
+      <div>
+        <h3>Two restaurant brands, one content engine.</h3>
+        <p class="intro">I own social and paid ads end to end for an Italian bakery group and a Korean restaurant in Koreatown: the calendar, the shoot, the edit, the ad spend and the weekly report to the owners. Each brand got its own voice; both run on the same system.</p>
 
-      <div class="reel-card">
-        <div class="reel-frame">
-          <iframe src="https://drive.google.com/file/d/1t3Z-MLVd8BNJxDMOXvrPyvIhiMwrnKmh/preview" allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">20K views</div>
-          <h3>1 Min Highlight</h3>
-          <p class="company-tag mono">SYNERIS PRODUCTION · 2025</p>
-          <p>Instagram Reel</p>
-        </div>
-      </div>
-
-      <div class="reel-card">
-        <div class="reel-frame">
-          <iframe src="https://drive.google.com/file/d/1yLp1iUjMV2TTE4tGEVLtXSDPFwmVdOdL/preview" allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">17K views</div>
-          <h3>Brand content reel</h3>
-          <p class="company-tag mono">ZILLABEAU · 2023</p>
-          <p>Instagram Reel</p>
-        </div>
-      </div>
-
-      <div class="reel-card">
-        <div class="reel-frame">
-          <iframe src="https://drive.google.com/file/d/1aJrEjx1jl1R1C1dsQXnPgCFv41KYrqEG/preview" allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">17K views</div>
-          <h3>Brand content</h3>
-          <p class="company-tag mono">ZILLABEAU · 2023</p>
-          <p>Instagram Reel</p>
-        </div>
-      </div>
-
-      <div class="reel-card">
-        <div class="reel-frame">
-          <iframe src="https://drive.google.com/file/d/1IhTpLkKaSrZmypNPuXuAHB-wYNQyKTMh/preview" allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="reel-meta">
-          <div class="views mono">9K views</div>
-          <h3>Brand content, short-form</h3>
-          <p class="company-tag mono">GRAND SK · 2023</p>
-          <p>TikTok</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="subdivider"><div class="line"></div><span>Long-form video</span><div class="line"></div></div>
-
-    <div class="longform-grid">
-      <div class="longform-card">
-        <div class="longform-frame">
-          <iframe src="https://drive.google.com/file/d/1DDy-V07_sG7ETS9bKgrVci2aoTfWja-_/preview" title="Wedding 5 mins movie" allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="longform-meta">
-          <h3>Wedding 5 mins movie</h3>
-          <p class="company-tag mono">SYNERIS PRODUCTION · 2025</p>
-        </div>
-      </div>
-
-<div class="longform-card">
-        <div class="longform-frame">
-          <iframe src="https://drive.google.com/file/d/1Wb-B_MHHLz5MrzMnDiCaLXaLoqOKoiWH/preview" title="Make.N brand seminar" allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="longform-meta">
-          <h3>Make.N brand seminar</h3>
-          <p class="company-tag mono">ZILLABEAU · 2023</p>
-          <p>YouTube</p>
-        </div>
-      </div>
-
-<div class="longform-card">
-        <div class="longform-frame">
-          <iframe src="https://drive.google.com/file/d/1XGJ3sI2qalK97qzq3Snr1w5gaw-3vr0v/preview" title="Moin app promo, vlog style" allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="longform-meta">
-          <h3>App promo, vlog style</h3>
-          <p class="company-tag mono">MOIN · 2021</p>
-          <p>YouTube</p>
-        </div>
-      </div>
-
-<div class="longform-card">
-        <div class="longform-frame">
-          <iframe src="https://drive.google.com/file/d/1DjZUQFfJwpIGRQ55lC2fiNwb_SOOVUN3/preview" title="Incheon Island promo film" allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="longform-meta">
-          <h3>Incheon Island promo film</h3>
-          <p class="company-tag mono">ATNOW · 2021</p>
-          <p>YouTube</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="social">
-    <div class="eyebrow section-eyebrow fade-text"><span class="rec-dot"></span><span class="timecode mono">00:02</span> SOCIAL</div>
-    <div class="section-head">
-      <h2>Curation that defines the brand mood.</h2>
-    </div>
-
-    <div class="brand-block">
-      <div class="brand-header">
-        <h3>ANGELINA BAKERY</h3>
-        <span class="role">Social media &amp; paid ads — Italian bakery, 9 locations, NYC/NJ</span>
-      </div>
-      <div class="social-layout">
-        <div class="post-grid">
-        <div class="post-tile"><div class="fill"></div><img src="media/g-angelina-thanksgiving.jpg" alt="Thanksgiving pie storybook carousel cover" data-client="Knock Knock, Thanksgiving is Coming!" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">22.8K views · day 1</div><div>Knock Knock, Thanksgiving is Coming!</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/angelina-princeton.jpg" alt="Princeton store opening teaser reel" data-client="Princeton, we’re coming" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">65.9K organic views</div><div>Princeton, we’re coming</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/g-angelina-cake.jpg" alt="Custom cake order poster" data-client="Your celebration, our masterpiece" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">Custom cake campaign</div><div>Your celebration, our masterpiece</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/g-angelina-cappuccino.jpg" alt="Cappuccino rule reel cover" data-client="Why Italians never order a cappuccino after 11 AM" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">Reel</div><div>Why Italians never order a cappuccino after 11 AM</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/g-angelina-bomboloni.jpg" alt="Bomboloni versus donut reel cover" data-client="Bomboloni vs American donut" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">Reel</div><div>Bomboloni vs American donut</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/g-angelina-mood.jpg" alt="Mood test carousel cover" data-client="What’s your mood today?" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">Carousel</div><div>What’s your mood today?</div></div></div></div>
-      </div>
-        <div class="what-i-did">
-          <div class="results">
-          <h4>Results</h4>
-          <ul>
-          <li>Weekly Instagram reach <strong>6.5x</strong> in 4 weeks</li>
-          <li>TikTok weekly views <strong>341 → 57.8K</strong></li>
-          <li>Website clicks <strong>3.9x</strong> in one week</li>
-          <li>Princeton pre-opening ads: <strong>~70K locals</strong> reached at a <strong>$2.97 CPM</strong></li>
-          </ul>
+        <div class="brands">
+          <div class="brand">
+            <h4>ANTO Korean Kitchen</h4>
+            <div class="sub">Korean restaurant · Koreatown NYC</div>
+            <ul class="stat-list">
+              <li><b>~600K</b>views on a 6-episode culture series; top reel 290K, organic</li>
+              <li><b>~230K</b>weekly views after launching Facebook, TikTok and YouTube</li>
+              <li><b>15-wk</b>high in own-channel bookings, up 8% year over year</li>
+            </ul>
           </div>
+          <div class="brand">
+            <h4>Angelina Bakery</h4>
+            <div class="sub">Italian bakery · 9 locations, NYC &amp; NJ</div>
+            <ul class="stat-list">
+              <li><b>6.5x</b>weekly Instagram reach in 4 weeks</li>
+              <li><b>341→58K</b>weekly TikTok views after rebuilding the calendar</li>
+              <li><b>3.9x</b>website clicks in a single week</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="strip-label">ANTO Korean Kitchen — reels &amp; posts</div>
+        <div class="strip">
+          <button class="tile" data-video="media/anto-bap.mp4"><img src="media/anto-bap.jpg" alt="“Have you eaten?” reel" loading="lazy"><span class="play" aria-hidden="true"></span><span class="cap"><b>290K</b>“Have you eaten?”</span></button>
+          <button class="tile" data-video="media/anto-baekkimchi.mp4"><img src="media/anto-baekkimchi.jpg" alt="Baek-kimchi reel" loading="lazy"><span class="play" aria-hidden="true"></span><span class="cap"><b>121K</b>Kimchi before it got spicy · incl. paid</span></button>
+          <button class="tile" data-video="media/anto-onggi.mp4"><img src="media/anto-onggi.jpg" alt="Onggi jar reel" loading="lazy"><span class="play" aria-hidden="true"></span><span class="cap"><b>65K</b>Kimchi fridges before fridges</span></button>
+          <button class="tile" data-video="media/anto-banchan.mp4"><img src="media/anto-banchan.jpg" alt="Banchan reel" loading="lazy"><span class="play" aria-hidden="true"></span><span class="cap"><b>53K</b>Food you didn’t order</span></button>
+          <button class="tile" data-img="media/g-anto-kimchi.jpg"><img src="media/g-anto-kimchi.jpg" alt="Kimchi history carousel cover" loading="lazy"><span class="cap">Carousel · Your kimchi has a secret past</span></button>
+          <button class="tile" data-img="media/g-anto-dolsot.jpg"><img src="media/g-anto-dolsot.jpg" alt="Dolsot lunch carousel cover" loading="lazy"><span class="cap">Carousel · Dolsot lunch special</span></button>
+        </div>
+        <div class="strip-label">Angelina Bakery — reels &amp; posts</div>
+        <div class="strip">
+          <button class="tile" data-video="media/angelina-fall.mp4"><img src="media/angelina-fall.jpg" alt="Fall in love with reel" loading="lazy"><span class="play" aria-hidden="true"></span><span class="cap"><b>26K</b>Fall in love with · incl. paid</span></button>
+          <button class="tile" data-img="media/g-angelina-thanksgiving.jpg"><img src="media/g-angelina-thanksgiving.jpg" alt="Thanksgiving pie storybook carousel cover" loading="lazy"><span class="cap"><b>22.8K</b>Thanksgiving carousel · day 1</span></button>
+          <button class="tile" data-img="media/g-angelina-holidaycake.jpg"><img src="media/g-angelina-holidaycake.jpg" alt="Holiday custom cake poster with lit candles" loading="lazy"><span class="cap">Custom cake · holiday orders</span></button>
+          <button class="tile" data-video="media/angelina-spooky.mp4"><img src="media/angelina-spooky.jpg" alt="Spooky season reel" loading="lazy"><span class="play" aria-hidden="true"></span><span class="cap"><b>40K</b>It’s spooky season</span></button>
+          <button class="tile" data-img="media/g-angelina-bomboloni.jpg"><img src="media/g-angelina-bomboloni.jpg" alt="Bomboloni versus donut reel cover" loading="lazy"><span class="cap">Reel · Bomboloni vs American donut</span></button>
+          <button class="tile" data-img="media/g-angelina-mood.jpg"><img src="media/g-angelina-mood.jpg" alt="Mood test carousel cover" loading="lazy"><span class="cap">Carousel · What’s your mood today?</span></button>
+        </div>
+
+        <div class="feature">
+          <img src="media/angelina-princeton.jpg" alt="Princeton store opening teaser reel" loading="lazy">
           <div>
-          <h4>What I did</h4>
-          <ul>
-          <li>Content planning</li>
-          <li>Shooting &amp; editing</li>
-          <li>Paid ads (Meta / TikTok)</li>
-          <li>Store-opening campaign</li>
-          <li>Weekly reporting</li>
-          </ul>
+            <div class="eyebrow">Spotlight · Store opening</div>
+            <h4>Angelina Bakery, Princeton NJ</h4>
+            <div class="phases">
+              <p><b>Challenge</b>A new store in a new state, with no local audience before opening day.</p>
+              <p><b>Approach</b>An organic teaser reel across four platforms, then a geo-targeted pre-opening campaign for local residents.</p>
+              <p><b>Result</b>65.9K organic views and 222 shares on the teaser. Ads reached ~70,000 locals at a $2.97 CPM using 37% of the budget.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="brand-block">
-      <div class="brand-header">
-        <h3>ANTO KOREAN KITCHEN</h3>
-        <span class="role">Social media &amp; paid ads — Korean restaurant, Koreatown NYC</span>
+        <div class="did"><span>Content strategy &amp; calendar</span><span>Shooting &amp; editing</span><span>Meta, TikTok &amp; Google Ads</span><span>Store-opening campaign</span><span>DM conversion ads</span><span>Automated weekly reporting</span></div>
       </div>
-      <div class="social-layout">
-        <div class="post-grid">
-        <div class="post-tile"><div class="fill"></div><img src="media/anto-bap.jpg" alt="Have you eaten reel cover" data-client="“Have you eaten?”" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">290K views</div><div>“Have you eaten?”</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/anto-baekkimchi.jpg" alt="Baek-kimchi reel cover" data-client="Kimchi before it got spicy" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">121K views</div><div>Kimchi before it got spicy</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/anto-onggi.jpg" alt="Onggi jar reel cover" data-client="Kimchi fridges before fridges" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">65K views</div><div>Kimchi fridges before fridges</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/g-anto-kimchi.jpg" alt="Kimchi history carousel cover" data-client="Your kimchi has a secret past" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">Carousel</div><div>Your kimchi has a secret past</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/g-anto-dolsot.jpg" alt="Dolsot lunch carousel cover" data-client="Dolsot lunch special" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">Carousel</div><div>Dolsot lunch special</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/g-anto-lunch.jpg" alt="Lunch set banchan carousel cover" data-client="Lunch set banchan" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">Carousel</div><div>Lunch set banchan</div></div></div></div>
+    </article>
+
+    <!-- CASE 02 -->
+    <article class="case">
+      <div class="case-meta">
+        <div class="num">02</div>
+        <b>Synerise Production</b>
+        Second Videographer · Freelance<br>Aug 2025 — May 2026<br><br>
+        <b>Zillabeau</b>
+        Lead Videographer<br>Nov 2022 — Aug 2023
       </div>
-        <div class="what-i-did">
-          <div class="results">
-          <h4>Results</h4>
-          <ul>
-          <li><strong>~230K weekly views</strong> across 4 channels</li>
-          <li>Top reel <strong>290K views</strong>; 6-episode series <strong>~600K</strong></li>
-          <li>Instagram views <strong>2.2x</strong>, +360 followers in 2 weeks</li>
-          <li>Own-channel bookings hit a <strong>15-week high</strong>, <strong>+8% YoY</strong></li>
-          </ul>
+      <div>
+        <h3>Behind the camera: shoot, light, edit, deliver.</h3>
+        <p class="intro">I know production from the set up. As second videographer at Synerise, I shot weddings and events alongside the lead and cut one-minute highlights for social. As lead videographer at Zillabeau, I produced short-form and live content that drove 1,000 hours of watch time in a single month.</p>
+        <div class="films">
+          <figure class="wide"><div class="frame"><iframe src="https://drive.google.com/file/d/1DDy-V07_sG7ETS9bKgrVci2aoTfWja-_/preview" allow="autoplay" loading="lazy" title="Wedding film"></iframe></div><figcaption><b>Wedding film, 6 min</b>Second videographer · Synerise · 2025</figcaption></figure>
+          <figure class="tall"><div class="frame"><video controls playsinline preload="none" poster="media/synerise-highlight-1.jpg" src="media/synerise-highlight-1.mp4"></video></div><figcaption><b>1-min highlight · 20K</b>Synerise · 2025</figcaption></figure>
+          <figure class="tall"><div class="frame"><video controls playsinline preload="none" poster="media/synerise-highlight-2.jpg" src="media/synerise-highlight-2.mp4"></video></div><figcaption><b>1-min highlight · 18K</b>Synerise · 2025</figcaption></figure>
+          <figure class="tall"><div class="frame"><video controls playsinline preload="none" poster="media/zillabeau-reel.jpg" src="media/zillabeau-reel.mp4"></video></div><figcaption><b>Brand reel · 17K</b>Zillabeau · 2023</figcaption></figure>
+        </div>
+        <p class="kit"><b>Kit</b> — Sony A7 III · gimbal · lighting &amp; audio setup · Premiere Pro · Final Cut Pro · color grading · CapCut</p>
+        <div class="did"><span>Directing &amp; shooting</span><span>Lighting &amp; sound</span><span>Long-form editing</span><span>Highlight cuts</span><span>Color grading</span><span>TikTok Live hosting</span></div>
+      </div>
+    </article>
+
+    <!-- CASE 03 -->
+    <article class="case">
+      <div class="case-meta">
+        <div class="num">03</div>
+        <b>Grand SK — Goldmiss</b>
+        Brand Marketing Intern<br>Apr — Nov 2022<br>New Jersey
+      </div>
+      <div>
+        <h3>A brand renewal, from Instagram grid to the store wall.</h3>
+        <p class="intro">Goldmiss's feed, store and website felt like three different brands. I moved the identity to a warm ivory base with strawberry-milk pink, butter yellow and sky blue for a Gen Z audience, then carried it into the packaging, a custom donut and hotdog photo wall, and the website.</p>
+        <div class="brands">
+          <div class="brand">
+            <ul class="stat-list">
+              <li><b>7x</b>Instagram followers in 4 months — 136 to 1,124</li>
+              <li><b>3</b>touchpoints unified: social, store interior, website</li>
+            </ul>
           </div>
-          <div>
-          <h4>What I did</h4>
-          <ul>
-          <li>Launched FB, TikTok &amp; YouTube</li>
-          <li>Short-form series</li>
-          <li>Carousel design</li>
-          <li>Paid ads (Meta / TikTok / Google)</li>
-          <li>Reservation tracking</li>
-          </ul>
+          <div class="brand">
+            <ul class="stat-list">
+              <li><b>Led</b>in-store interior direction and custom installations</li>
+              <li><b>Led</b>website renewal and social visual overhaul end to end</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-
-
-    <div class="brand-block">
-      <div class="brand-header">
-        <h3>GRAND SK — Goldmiss</h3>
-        <span class="role">TikTok &amp; Instagram management — Korean dessert franchise, US</span>
-      </div>
-      <div class="social-layout">
-        <div class="post-grid post-grid--goldmiss">
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p01-003e6aac67.jpg" class="lightbox-trigger" data-client="Goldmiss — 59 likes · Halloween special gift event" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 59</div><div>Halloween special gift event</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p02-2947c36270.jpg" class="lightbox-trigger" data-client="Goldmiss — 58 likes · Giant corndog photo op" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 58</div><div>Giant corndog photo op</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p03-196baf6bab.jpg" class="lightbox-trigger" data-client="Goldmiss — 148 likes · Halloween donuts are here" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 148</div><div>Halloween donuts are here</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p04-81964873f4.jpg" class="lightbox-trigger" data-client="Goldmiss — 86 likes · $20 hotdog combo giveaway" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 86</div><div>$20 hotdog combo giveaway</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p05-fb8cd8b379.jpg" class="lightbox-trigger" data-client="Goldmiss — 106 likes · Giveaway ends in 2 days" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 106</div><div>Giveaway ends in 2 days</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p06-5f04bc207b.jpg" class="lightbox-trigger" data-client="Goldmiss — 61 likes · November check-in" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 61</div><div>November check-in</div></div></div></div>
-      </div>
-        <div class="what-i-did">
-          <h4>What I did</h4>
-          <ul>
-          <li>Content planning</li>
-          <li>Shooting & editing</li>
-          <li>Account management</li>
-          <li>Campaign & giveaway posts</li>
-          </ul>
+        <div class="gallery">
+          <figure><img src="media/img/p19-548cf8f7b2.jpg" alt="Store interior before rebrand" loading="lazy"><figcaption>Store — before</figcaption></figure>
+          <figure><img src="media/img/p20-e18a64e41f.jpg" alt="Store interior after rebrand" loading="lazy"><figcaption>Store — after</figcaption></figure>
+          <figure><img src="media/img/p32-07a19cb71d.jpg" alt="Finished donut wall installation" loading="lazy"><figcaption>Custom donut wall</figcaption></figure>
+          <figure><img src="media/img/p23-8a00009e6c.jpg" alt="Final Goldmiss donut box design" loading="lazy"><figcaption>Packaging — final</figcaption></figure>
         </div>
+        <div class="did"><span>Brand identity</span><span>Slogan</span><span>Interior direction</span><span>Packaging</span><span>Website renewal</span></div>
       </div>
-    </div>
+    </article>
+  </div>
+</section>
 
-    <div class="brand-block">
-      <div class="brand-header">
-        <h3>ZILLABEAU</h3>
-        <span class="role">TikTok &amp; Instagram management — nail supply, US</span>
-      </div>
-      <div class="social-layout">
-        <div class="post-grid post-grid--zillabeau">
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p07-547e363087.jpg" class="lightbox-trigger" data-client="ZILLABEAU — 798 likes · Zillabeau Lamp V3 launch" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 798</div><div>Zillabeau Lamp V3 launch</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p08-ab8c65fed3.jpg" class="lightbox-trigger" data-client="ZILLABEAU — 301 likes · Fiote Ink Fit Metallic Collection" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 301</div><div>Fiote Ink Fit Metallic Collection</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p09-e86348487e.jpg" class="lightbox-trigger" data-client="ZILLABEAU — 264 likes · Tiny Neon Struck Ice Cream restock" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 264</div><div>Tiny Neon Struck Ice Cream restock</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p10-32b621e01b.jpg" class="lightbox-trigger" data-client="ZILLABEAU — 394 likes · Marie Atelier glitter collection" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 394</div><div>Marie Atelier glitter collection</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p11-d31d05e5c8.jpg" class="lightbox-trigger" data-client="ZILLABEAU — 163 likes · Lily gel spring pastels" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 163</div><div>Lily gel spring pastels</div></div></div></div>
-        <div class="post-tile"><div class="fill"></div><img src="media/img/p12-cdb3ed48c9.jpg" class="lightbox-trigger" data-client="ZILLABEAU — 298 likes · Hyunzzang seminar recap" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"><div class="overlay"><div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 298</div><div>Hyunzzang seminar recap</div></div></div></div>
-      </div>
-        <div class="what-i-did">
-          <h4>What I did</h4>
-          <ul>
-          <li>Content planning</li>
-          <li>Shooting & editing</li>
-          <li>Account management</li>
-          <li>TikTok Live hosting</li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-    <div class="brand-block">
-      <div class="brand-header">
-        <h3>ATNOW</h3>
-        <span class="role">Naver Blog &amp; Instagram management — Gangwon tourism, KR</span>
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Experience</div>
+      <h2>Five years across food, beauty, fashion and tourism.</h2>
+    </div>
+    <ul class="xp">
+      <li><div class="yr">Aug 2026 — Present</div><div class="co">QB Hospitality<small>Social Media &amp; Marketing Manager</small></div><div class="what">Social and paid ads for Angelina Bakery and ANTO Korean Kitchen, New York.</div></li>
+      <li><div class="yr">Aug 2025 — May 2026</div><div class="co">Synerise Production<small>Second Videographer · Freelance</small></div><div class="what">Weddings and events — shooting alongside the lead and editing one-minute highlights.</div></li>
+      <li><div class="yr">Sep 2023 — Jul 2025</div><div class="co">Studio3eme<small>Marketing Coordinator</small></div><div class="what">Rebuilt the company website and led S/S and F/W sample printing for fashion clients including Ralph Lauren and Karl Lagerfeld.</div></li>
+      <li><div class="yr">Nov 2022 — Aug 2023</div><div class="co">Zillabeau<small>Lead Videographer</small></div><div class="what">Short-form and live content for a nail-supply brand; 1,000 hours of watch time in a month.</div></li>
+      <li><div class="yr">Apr — Nov 2022</div><div class="co">Grand SK — Goldmiss<small>Brand Marketing Intern</small></div><div class="what">Brand renewal across social, store interior and website; 7x followers in 4 months.</div></li>
+      <li><div class="yr">Sep 2021 — Jan 2022</div><div class="co">MOIN<small>Video Content Creator · Freelance</small></div><div class="what">Video marketing for a Seoul fintech; one video named the month’s most interesting content.</div></li>
+      <li><div class="yr">Apr — Aug 2021</div><div class="co">ATNOW<small>Marketing &amp; Promotions Intern</small></div><div class="what">Gangwon tourism content; grew Instagram by 2K+ followers in 4 months and became lead producer.</div></li>
+      <li><div class="yr">Education</div><div class="co">Hallym University<small>B.A. Advertising &amp; PR</small></div><div class="what">Exchange program in intercultural communication, The Hague University.</div></li>
+    </ul>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">How I work</div>
+      <h2>One person from idea to result.</h2>
+    </div>
+    <div class="how">
+      <div>
+        <div class="eyebrow">01 · Strategy</div>
+        <h4>Plan series, not posts</h4>
+        <p>Content pillars, a weekly calendar and formats native to each platform, built around what the business needs that month.</p>
+        <div class="tools">Instagram · TikTok · YouTube Shorts · Facebook</div>
       </div>
-      <div class="social-layout">
-        <div class="post-grid post-grid--atnow">
-<div class="post-tile">
-  <img src="media/img/p13-7f0676c08a.jpg" alt="BTS-approved beach escape — crystal clear waters at Samcheok Maengbang" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-  <div class="overlay">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 396</div>
-      <div>BTS-approved beach escape — crystal clear waters at Samcheok Maengbang</div>
+      <div>
+        <div class="eyebrow">02 · Production</div>
+        <h4>Shoot and edit in-house</h4>
+        <p>Fast turnaround without losing craft: concept, shoot, voiceover, edit and design, done by the same hands.</p>
+        <div class="tools">Sony A7 III · Premiere Pro · Final Cut Pro · CapCut · Canva</div>
+      </div>
+      <div>
+        <div class="eyebrow">03 · Performance</div>
+        <h4>Spend where it works</h4>
+        <p>Paid social with clear goals, geo-targeting for openings, and an automated weekly report so owners see what moved.</p>
+        <div class="tools">Meta Ads Manager · TikTok Ads · Google Ads · Analytics</div>
+      </div>
     </div>
   </div>
-</div>
-<div class="post-tile">
-  <img src="media/img/p14-c2e8272782.jpg" alt="Shasta daisy fields at a summer ski resort in Gangwon" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-  <div class="overlay">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 285</div>
-      <div>Shasta daisy fields at a summer ski resort in Gangwon</div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2>Looking for someone to own your social and content? Let’s talk.</h2>
+    <div class="links">
+      <a class="btn primary" href="mailto:yewonnn616@gmail.com">Email me →</a>
+      <a class="btn" href="https://www.linkedin.com/in/yewon-park-bagaewon928/" target="_blank" rel="noopener">LinkedIn →</a>
     </div>
+    <p class="loc">Greater New York Area · Hybrid, on-site or remote · English and Korean</p>
   </div>
-</div>
-<div class="post-tile">
-  <img src="media/img/p15-7cf4d9bb3e.jpg" alt="Missing summer? Autumn sea meets sky at Sokcho's Yeonggeum Pavilion" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-  <div class="overlay">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 245</div>
-      <div>Missing summer? Autumn sea meets sky at Sokcho's Yeonggeum Pavilion</div>
-    </div>
-  </div>
-</div>
-<div class="post-tile">
-  <img src="media/img/p16-e2296d39f2.jpg" alt="Korean soul food — soft, earthy Eosuri namul rice bowl" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-  <div class="overlay">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 386</div>
-      <div>Korean soul food — soft, earthy Eosuri namul rice bowl</div>
-    </div>
-  </div>
-</div>
-<div class="post-tile">
-  <img src="media/img/p17-946c2f5667.jpg" alt="Cool off in the mystical Seongnamri Seonghwangnim forest, Wonju" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-  <div class="overlay">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 300</div>
-      <div>Cool off in the mystical Seongnamri Seonghwangnim forest, Wonju</div>
-    </div>
-  </div>
-</div>
-<div class="post-tile">
-  <img src="media/img/p18-f0f25e087a.jpg" alt="Stargazing at Anbandegi — a fairytale field under the Milky Way" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-  <div class="overlay">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);margin-bottom:4px;">♥ 403</div>
-      <div>Stargazing at Anbandegi — a fairytale field under the Milky Way</div>
-    </div>
-  </div>
-</div>
-</div>
-        <div class="what-i-did">
-          <h4>What I did</h4>
-          <ul>
-          <li>Content planning</li>
-          <li>Research &amp; editing</li>
-          <li>Naver Blog management</li>
-          <li>Instagram management</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+</section>
 
-  <section class="rebrand" id="rebrand">
-    <div class="eyebrow section-eyebrow fade-text"><span class="rec-dot"></span><span class="timecode mono">00:03</span> BRANDING</div>
-    <div class="section-head">
-      <h2>Cohesive branding from concept to space.</h2>
-    </div>
+<footer><div class="wrap"><span>© 2026 Yeawon Park</span><span>New York</span></div></footer>
 
-    <div class="case-block">
-      <div class="brand-header">
-        <h3>ANGELINA BAKERY — Princeton Opening</h3>
-        <span class="role-title">Social Media &amp; Marketing Manager, 2026</span>
-        <div class="scope-row">
-          <span class="scope-tag">Store-Opening Campaign</span>
-          <span class="scope-tag">Short-form Teaser</span>
-          <span class="scope-tag">Geo-targeted Paid Social</span>
-          <span class="scope-tag">4-Platform Rollout</span>
-        </div>
-      </div>
-      <div class="case-grid">
-        <div class="phase">
-          <div class="eyebrow"><span class="timecode mono">PH.01</span> CHALLENGE</div>
-          <p>A new store in a new state — Princeton, NJ — with no local audience before opening day.</p>
-        </div>
-        <div class="phase">
-          <div class="eyebrow"><span class="timecode mono">PH.02</span> APPROACH</div>
-          <p>An organic teaser reel across Instagram, TikTok, YouTube and Facebook, followed by a geo-targeted pre-opening ad campaign aimed at local residents.</p>
-        </div>
-        <div class="phase">
-          <div class="eyebrow"><span class="timecode mono">PH.03</span> RESULT</div>
-          <p><strong style="color:var(--paper)">65.9K organic views and 222 shares</strong> for the teaser; ads reached <strong style="color:var(--paper)">~70,000 local residents at a $2.97 CPM</strong> while using only 37% of the budget.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="case-block">
-      <div class="brand-header">
-        <h3>GRAND SK — Goldmiss</h3>
-        <span class="role-title">Marketing Team Intern, 2022</span>
-        <div class="scope-row">
-          <span class="scope-tag">Brand Renewal</span>
-          <span class="scope-tag">Brand Slogan Creation</span>
-          <span class="scope-tag">Interior Project Participation &amp; Lead</span>
-          <span class="scope-tag">Website Renewal</span>
-        </div>
-      </div>
-
-      <div class="swatch-strip">
-        <div class="swatch" style="background:#F5F3EE;">OLD</div>
-        <div class="swatch" style="background:#E8B4C0;"></div>
-        <div class="swatch-arrow">→</div>
-        <div class="swatch" style="background:#F0E6D2;">NEW</div>
-        <div class="swatch" style="background:#F4A8B8;"></div>
-        <div class="swatch" style="background:#F5D87A;"></div>
-        <div class="swatch" style="background:#B8DCE8;"></div>
-      </div>
-
-      <div class="case-grid">
-        <div class="phase">
-          <div class="eyebrow"><span class="timecode mono">PH.01</span> CHALLENGE</div>
-          <p>Goldmiss's Instagram, physical store interior, and website felt disconnected, lacking a unified identity that aligned with the brand's strategic vision.</p>
-        </div>
-        <div class="phase">
-          <div class="eyebrow"><span class="timecode mono">PH.02</span> APPROACH</div>
-          <p>Shifted the brand identity from a basic white-and-pink to a warmer ivory base, layered with soft strawberry milk pink, butter-yellow, and light sky blue — establishing a kitsch, playful tone tailored to the core Gen Z female audience (ages 18–25).</p>
-          <ul class="phase-list">
-            <li><strong>Spatial Design:</strong> Directed the in-store interior, including a custom oversized donut wall installation.</li>
-            <li><strong>Digital Renewal:</strong> Led the website renewal and social media visual overhaul end-to-end.</li>
-          </ul>
-        </div>
-        <div class="phase">
-          <div class="eyebrow"><span class="timecode mono">PH.03</span> RESULT</div>
-          <p>Achieved a 7x increase in Instagram followers within 4 months, scaling the account from 136 followers (19 posts) to over 1,124 followers (60 posts) while successfully unifying the omni-channel brand experience.</p>
-        </div>
-      </div>
-
-
-
-      <div class="photo-group">
-        <div class="group-label">Store Interior</div>
-        <div class="photo-pair">
-          <figure><figcaption>Before</figcaption><img class="lightbox-trigger" src="media/img/p19-548cf8f7b2.jpg" alt="Store interior before rebrand"></figure>
-          <figure><figcaption>After</figcaption><img class="lightbox-trigger" src="media/img/p20-e18a64e41f.jpg" alt="Store interior after rebrand"></figure>
-        </div>
-      </div>
-
-      <div class="photo-group">
-        <div class="group-label">Donut Box Design</div>
-        <div class="photo-trio">
-          <figure><figcaption>Before</figcaption><img class="lightbox-trigger" src="media/img/p21-1347f57078.jpg" alt="Donut box packaging, very first version before redesign"></figure>
-          <figure><figcaption>In Progress</figcaption><img class="lightbox-trigger" src="media/img/p22-7a3700324f.jpg" alt="Donut box packaging after redesign"></figure>
-        
-          <figure><figcaption>Final — Updated Colors</figcaption><img class="lightbox-trigger" src="media/img/p23-8a00009e6c.jpg" alt="Final Goldmiss donut box design with updated color palette, in use"></figure>
-        </div>
-      </div>
-
-      <div class="photo-group">
-        <div class="group-label">Interior Concepts &amp; Custom Installation</div>
-        <div class="process-gallery">
-          <div class="wide-stack">
-            <figure><figcaption>Concept A</figcaption><img class="lightbox-trigger" src="media/img/p24-4eafe748b2.jpg" alt="Goldmiss interior design concept option, final storefront render"></figure>
-            <figure><figcaption>Working Plan</figcaption><img class="lightbox-trigger" src="media/img/p25-7812f63f8f.jpg" alt="Goldmiss interior elevation and floor plan, working draft"></figure>
-            <figure><figcaption>Final Plan</figcaption><img class="lightbox-trigger" src="media/img/p26-7bcb0ea17d.jpg" alt="Goldmiss interior elevation, final approved design"></figure>
-          </div>
-          <div class="tall-pair">
-            <figure><figcaption>Donut Structure</figcaption><img class="lightbox-trigger" src="media/img/p27-4ec8b41a43.jpg" alt="Custom oversized donut wall structure during fabrication"></figure>
-            <figure><figcaption>Hotdog Structure</figcaption><img class="lightbox-trigger" src="media/img/p28-78c5b16dd2.jpg" alt="Custom oversized hotdog wall structure during fabrication"></figure>
-          
-            <figure><figcaption>Instagram — Early</figcaption><img class="lightbox-trigger" src="media/img/p29-39432c99d2.jpg" alt="Goldmiss Instagram early days, 136 followers"></figure>
-            <figure><figcaption>Instagram — 1,124 Followers</figcaption><img class="lightbox-trigger" src="media/img/p30-83cf4590ae.jpg" alt="Goldmiss Instagram after growth, over 1124 followers"></figure>
-            <figure><figcaption>Installed — Hotdog Wall</figcaption><img class="lightbox-trigger" src="media/img/p31-2ecd5b60b7.jpg" alt="Finished hotdog wall installation used as Instagram photo backdrop"></figure>
-            <figure><figcaption>Installed — Donut Wall</figcaption><img class="lightbox-trigger" src="media/img/p32-07a19cb71d.jpg" alt="Finished donut wall installation used as Instagram photo backdrop"></figure>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="case-block">
-      <div class="brand-header">
-        <h3>Studio3eme</h3>
-        <span class="role-title">Marketing Coordinator, Sep 2023 – Jul 2025</span>
-        <div class="scope-row">
-          <span class="scope-tag">Website Renewal</span>
-          <span class="scope-tag">Client Management</span>
-          <span class="scope-tag">S/S &amp; F/W Sample Printing Lead</span>
-          <span class="scope-tag">Bilingual Translation (EN/KR)</span>
-        </div>
-      </div>
-
-      <p style="color:rgba(244,241,234,0.65); font-size:15px; margin-bottom:32px; max-width:640px;">Revamped Studio3eme's website and led S/S &amp; F/W sample printing for fashion clients, managing color accuracy and client relationships from first sample to final fabric.</p>
-
-      <div class="group-label">Website Renewal — Before &amp; After</div>
-      <div class="compare-grid">
-        <div class="compare-block">
-          <div class="client-name">Home</div>
-          <div class="compare-slider">
-            <img class="compare-before" src="media/img/p33-a383125ec0.jpg" alt="Studio3eme Home page before redesign">
-            <img class="compare-after" src="media/img/p34-ead9b69c89.jpg" alt="Studio3eme Home page after redesign">
-            <span class="compare-label label-before">Before</span>
-            <span class="compare-label label-after">After</span>
-            <div class="compare-handle"></div>
-            <div class="compare-knob"></div>
-          </div>
-        </div>
-        <div class="compare-block">
-          <div class="client-name">About</div>
-          <div class="compare-slider">
-            <img class="compare-before" src="media/img/p35-65eef72320.jpg" alt="Studio3eme About page before redesign">
-            <img class="compare-after" src="media/img/p36-d2e1d5d1e2.jpg" alt="Studio3eme About page after redesign">
-            <span class="compare-label label-before">Before</span>
-            <span class="compare-label label-after">After</span>
-            <div class="compare-handle"></div>
-            <div class="compare-knob"></div>
-          </div>
-        </div>
-        <div class="compare-block">
-          <div class="client-name">Services</div>
-          <div class="compare-slider">
-            <img class="compare-before" src="media/img/p37-d9cdb4010a.jpg" alt="Studio3eme Services page before redesign">
-            <img class="compare-after" src="media/img/p38-8f1e77e28e.jpg" alt="Studio3eme Services page after redesign">
-            <span class="compare-label label-before">Before</span>
-            <span class="compare-label label-after">After</span>
-            <div class="compare-handle"></div>
-            <div class="compare-knob"></div>
-          </div>
-        </div>
-        <div class="compare-block">
-          <div class="client-name">Gallery</div>
-          <div class="compare-slider">
-            <img class="compare-before" src="media/img/p39-ed7efa8f27.jpg" alt="Studio3eme Gallery page before redesign">
-            <img class="compare-after" src="media/img/p40-d186e19fff.jpg" alt="Studio3eme Gallery page after redesign">
-            <span class="compare-label label-before">Before</span>
-            <span class="compare-label label-after">After</span>
-            <div class="compare-handle"></div>
-            <div class="compare-knob"></div>
-          </div>
-        </div>
-
-      <div class="group-label">Sample Printing Projects — S/S &amp; F/W</div>
-      <div class="client-gallery">
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p41-a638cdc96b.jpg" alt="Gramercy Atelier custom dress design sketch with floral print" data-client="Gramercy Atelier"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p42-f2b426474f.jpg" alt="Gramercy Atelier floral print pattern detail" data-client="Gramercy Atelier"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p43-6dc4d0f888.jpg" alt="Gramercy Atelier printed fabric swatches in coral and blue" data-client="Gramercy Atelier"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p44-f64fb6aa14.jpg" alt="Karl Lagerfeld 2024 S/S floral print strike-offs" data-client="Karl Lagerfeld"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p45-7cc506bfdb.jpg" alt="Karl Lagerfeld 2024 S/S floral print colorway samples" data-client="Karl Lagerfeld"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p46-ddabf214e8.jpg" alt="Broadway musical costume pattern piece with construction notes" data-client="Broadway Musical"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p47-8237f48d60.jpg" alt="Broadway musical costume sequin fabric swatch with Pantone color references" data-client="Broadway Musical"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p48-30e57e22c0.jpg" alt="Ralph Lauren 2024 S/S sample print 1" data-client="Ralph Lauren"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p49-3829301790.jpg" alt="Ralph Lauren 2024 S/S sample print 2" data-client="Ralph Lauren"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p50-9c79c59eff.jpg" alt="Ralph Lauren 2024 S/S sample print 3" data-client="Ralph Lauren"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p51-223b360904.jpg" alt="Ralph Lauren 2024 S/S sample print 4" data-client="Ralph Lauren"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p52-7a10c289d7.jpg" alt="Ralph Lauren 2024 S/S sample print 5" data-client="Ralph Lauren"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p53-40c9f7a7d0.jpg" alt="Ralph Lauren 2024 S/S sample print 6" data-client="Ralph Lauren"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p54-4b0995dff6.jpg" alt="Ralph Lauren 2024 S/S sample print 7" data-client="Ralph Lauren"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p55-18fcda0534.jpg" alt="Ralph Lauren 2024 S/S sample print 8" data-client="Ralph Lauren"></div>
-        <div class="tile"><img class="lightbox-trigger" src="media/img/p56-c718d9eee0.jpg" alt="Ralph Lauren 2024 S/S sample print 9" data-client="Ralph Lauren"></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="toolkit">
-    <div class="eyebrow section-eyebrow fade-text"><span class="rec-dot"></span><span class="timecode mono">00:04</span> TOOLKIT</div>
-    <div class="section-head">
-      <h2>Every tool for the job.</h2>
-    </div>
-
-    <div class="group-label">Camera & Gear</div>
-    <div class="tag-row">
-      <span class="tag">Sony A7 III</span>
-      <span class="tag">Gimbal Setup</span>
-      <span class="tag">Lighting & Mic Setup</span>
-      <span class="tag">Ricoh GR II (Personal)</span>
-    </div>
-
-    <div class="group-label">Editing & Design</div>
-    <div class="tag-row">
-      <span class="tag">Premiere Pro</span>
-      <span class="tag">Final Cut Pro</span>
-      <span class="tag">Canva</span>
-      <span class="tag">CapCut</span>
-      <span class="tag">Color Grading</span>
-      <span class="tag">Wix</span>
-      <span class="tag">AI Creative Tools</span>
-    </div>
-
-    <div class="group-label">Office & Business</div>
-    <div class="tag-row">
-      <span class="tag">Microsoft Office Suite</span>
-      <span class="tag">Google Workspace</span>
-      <span class="tag">QuickBooks</span>
-    </div>
-
-    <div class="group-label">Platforms & Live</div>
-    <div class="tag-row">
-      <span class="tag">Instagram Insights</span>
-      <span class="tag">TikTok Live Hosting</span>
-      <span class="tag">Facebook</span>
-      <span class="tag">Meta Business Suite</span>
-      <span class="tag">Meta Ads Manager</span>
-      <span class="tag">TikTok Ads</span>
-      <span class="tag">Google Ads</span>
-      <span class="tag">YouTube Shorts</span>
-    </div>
-
-    <div class="group-label">Languages</div>
-    <div class="tag-row">
-      <span class="tag">Korean — Native</span>
-      <span class="tag">English — Fluent</span>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="eyebrow section-eyebrow fade-text"><span class="rec-dot"></span><span class="timecode mono">00:05</span> CONTACT</div>
-    <h2>Let's create something impactful together.<br>Get in touch.</h2>
-    <div class="contact-list">
-      <div class="contact-actions">
-        <a href="mailto:yewonnn616@gmail.com">Email →</a>
-        <a href="https://www.linkedin.com/in/yewon-park-bagaewon928/" target="_blank">LinkedIn →</a>
-      </div>
-      <div class="contact-location">Greater New York Area (Hybrid / On-site / Remote)</div>
-    </div>
-  </section>
-
-  
-
-  <div class="lightbox-overlay" id="lightboxOverlay">
-    <button class="lightbox-close" id="lightboxClose">CLOSE ✕</button>
-    <img id="lightboxImg" src="" alt="Enlarged photo">
-    <div class="lightbox-caption" id="lightboxCaption"></div>
-  </div>
-
-  <footer>© 2026 YEAWON PARK — BUILT FRAME BY FRAME</footer>
-
-  <script>
-    const ticks = document.querySelectorAll('.scrubber-tick');
-    const sections = Array.from(ticks).map(t => document.getElementById(t.dataset.target));
-    const playhead = document.getElementById('playhead');
-
-    ticks.forEach(tick => {
-      tick.addEventListener('click', () => {
-        document.getElementById(tick.dataset.target).scrollIntoView({behavior:'smooth'});
-      });
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Media viewer"><button class="lb-close" id="lbClose">CLOSE ✕</button><div id="lbBody"></div></div>
+<script>
+(function(){
+  var lb=document.getElementById('lb'), body=document.getElementById('lbBody');
+  function close(){ lb.classList.remove('open'); body.innerHTML=''; }
+  document.querySelectorAll('.tile').forEach(function(t){
+    t.addEventListener('click',function(){
+      var v=t.dataset.video, i=t.dataset.img;
+      body.innerHTML = v ? '<video controls autoplay playsinline src="'+v+'"></video>' : '<img src="'+i+'" alt="">';
+      lb.classList.add('open');
     });
-
-    function onScroll(){
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      playhead.style.width = pct + '%';
-
-      let activeIndex = 0;
-      sections.forEach((sec, i) => {
-        const rect = sec.getBoundingClientRect();
-        if(rect.top <= window.innerHeight * 0.4){
-          activeIndex = i;
-        }
-      });
-      ticks.forEach((t,i) => t.classList.toggle('active', i === activeIndex));
-    }
-
-    window.addEventListener('scroll', onScroll, {passive:true});
-    onScroll();
-
-    const fadeObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('is-visible');
-        }
-      });
-    }, {threshold:0.4});
-    document.querySelectorAll('.fade-text').forEach(el => fadeObserver.observe(el));
-
-    document.querySelectorAll('.compare-slider').forEach(slider => {
-      const afterImg = slider.querySelector('.compare-after');
-      const handle = slider.querySelector('.compare-handle');
-      const knob = slider.querySelector('.compare-knob');
-      let dragging = false;
-
-      function setPosition(clientX){
-        const rect = slider.getBoundingClientRect();
-        let pct = ((clientX - rect.left) / rect.width) * 100;
-        pct = Math.max(0, Math.min(100, pct));
-        afterImg.style.clipPath = `inset(0 0 0 ${pct}%)`;
-        handle.style.left = pct + '%';
-        knob.style.left = pct + '%';
-      }
-
-      slider.addEventListener('mousedown', (e) => { dragging = true; setPosition(e.clientX); });
-      window.addEventListener('mousemove', (e) => { if(dragging) setPosition(e.clientX); });
-      window.addEventListener('mouseup', () => { dragging = false; });
-
-      slider.addEventListener('touchstart', (e) => { dragging = true; setPosition(e.touches[0].clientX); });
-      slider.addEventListener('touchmove', (e) => { if(dragging){ setPosition(e.touches[0].clientX); e.preventDefault(); } }, {passive:false});
-      slider.addEventListener('touchend', () => { dragging = false; });
-    });
-
-    const lightboxOverlay = document.getElementById('lightboxOverlay');
-    const lightboxImg = document.getElementById('lightboxImg');
-    const lightboxClose = document.getElementById('lightboxClose');
-    const lightboxCaption = document.getElementById('lightboxCaption');
-
-    document.querySelectorAll('.photo-pair img, .photo-trio img, .photo-single img, .process-gallery img, .client-gallery img, .post-grid img').forEach(img => {
-      img.classList.add('lightbox-trigger');
-      img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        const client = img.getAttribute('data-client');
-        if(client){
-          lightboxCaption.textContent = client;
-          lightboxCaption.classList.add('active');
-        } else {
-          lightboxCaption.classList.remove('active');
-        }
-        lightboxOverlay.classList.add('active');
-      });
-    });
-
-    function closeLightbox(){
-      lightboxOverlay.classList.remove('active');
-      lightboxImg.src = '';
-      lightboxCaption.classList.remove('active');
-    }
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightboxOverlay.addEventListener('click', (e) => {
-      if(e.target === lightboxOverlay) closeLightbox();
-    });
-    document.addEventListener('keydown', (e) => {
-      if(e.key === 'Escape') closeLightbox();
-    });
-
-    /* ===== EFFECT 1: SECTION HEADER REVEAL ===== */
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('is-visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll('.section-head h2, .contact h2').forEach(el => {
-      el.classList.add('reveal-text');
-      revealObserver.observe(el);
-    });
-
-    /* ===== EFFECT 2: PARALLAX ON VIDEO/IMAGE CARDS ===== */
-    function updateParallax(){
-      const winH = window.innerHeight;
-      document.querySelectorAll('.reel-card').forEach((card, i) => {
-        const rect = card.getBoundingClientRect();
-        if(rect.bottom < -100 || rect.top > winH + 100) return;
-        const offset = (rect.top + rect.height / 2 - winH / 2) * 0.07;
-        card.style.transform = `translateY(${offset}px)`;
-      });
-      document.querySelectorAll('.longform-card').forEach((card, i) => {
-        const rect = card.getBoundingClientRect();
-        if(rect.bottom < -100 || rect.top > winH + 100) return;
-        const dir = i % 2 === 0 ? 1 : -1;
-        const offset = (rect.top + rect.height / 2 - winH / 2) * 0.045 * dir;
-        card.style.transform = `translateY(${offset}px)`;
-      });
-    }
-
-    /* ===== EFFECT 3: SUBTLE BACKGROUND COLOR SHIFT ===== */
-    const bgStops = [
-      { id:'hero',    r:36,  g:19, b:52 },
-      { id:'work',    r:28,  g:13, b:48 },
-      { id:'social',  r:22,  g:17, b:44 },
-      { id:'rebrand', r:30,  g:12, b:50 },
-      { id:'toolkit', r:24,  g:16, b:46 },
-      { id:'contact', r:36,  g:19, b:52 },
-    ];
-
-    function lerp(a, b, t){ return a + (b - a) * Math.max(0, Math.min(1, t)); }
-
-    function updateBg(){
-      const scrollY = window.scrollY;
-      const winH = window.innerHeight;
-      for(let i = 0; i < bgStops.length - 1; i++){
-        const elA = document.getElementById(bgStops[i].id);
-        const elB = document.getElementById(bgStops[i+1].id);
-        if(!elA || !elB) continue;
-        const aTop = elA.getBoundingClientRect().top + scrollY;
-        const bTop = elB.getBoundingClientRect().top + scrollY;
-        const progress = (scrollY + winH * 0.5 - aTop) / (bTop - aTop);
-        if(progress >= 0 && progress <= 1){
-          const cA = bgStops[i], cB = bgStops[i+1];
-          const r = Math.round(lerp(cA.r, cB.r, progress));
-          const g = Math.round(lerp(cA.g, cB.g, progress));
-          const b = Math.round(lerp(cA.b, cB.b, progress));
-          document.body.style.background = `rgb(${r},${g},${b})`;
-          return;
-        }
-      }
-    }
-
-    /* ===== ATTACH PARALLAX + BG TO SCROLL ===== */
-    window.addEventListener('scroll', () => {
-      updateParallax();
-      updateBg();
-    }, {passive:true});
-    updateParallax();
-    updateBg();
-
-  </script>
-
+  });
+  document.getElementById('lbClose').addEventListener('click',close);
+  lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
 </body>
 </html>
