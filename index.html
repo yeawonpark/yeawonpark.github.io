@@ -133,6 +133,10 @@ section{padding:112px 0}
 .lb-close{all:unset;cursor:pointer;position:absolute;top:18px;right:24px;color:var(--paper);font-size:14px;letter-spacing:.1em}
 .films video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:var(--ink)}
 
+.clients{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 28px;padding:20px 0;margin:-16px 0 36px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.clients span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:500;margin-right:4px}
+.clients b{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.2}
+.strip.s3{grid-template-columns:repeat(3,minmax(0,1fr))}
 /* experience */
 .xp{list-style:none;border-top:1px solid var(--line)}
 .xp li{display:grid;grid-template-columns:200px minmax(0,1.1fr) minmax(0,1.4fr);gap:32px;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -198,6 +202,8 @@ footer .wrap{display:flex;justify-content:space-between}
   .proof div{border-right:0;border-bottom:1px solid var(--line)}
   .proof div:last-child{border-bottom:0}
   .strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strip.s3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .clients b{font-size:20px}
   .films{grid-template-columns:1fr 1fr}
   .stat-list li{grid-template-columns:84px minmax(0,1fr)}
 }
@@ -246,7 +252,7 @@ footer .wrap{display:flex;justify-content:space-between}
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Selected work</div>
-      <h2>Three projects that show how I work — strategy, camera and brand.</h2>
+      <h2>Four projects that show how I work — strategy, camera, client work and brand.</h2>
     </div>
 
     <!-- CASE 01 -->
@@ -344,6 +350,48 @@ footer .wrap{display:flex;justify-content:space-between}
     <article class="case">
       <div class="case-meta">
         <div class="num">03</div>
+        <b>Studio3eme</b>
+        Marketing Coordinator<br>Sep 2023 — Jul 2025<br>New York
+      </div>
+      <div>
+        <h3>The bridge between fashion designers, clients and the print floor.</h3>
+        <p class="intro">At a New York textile print studio, I sat between the people who design and the people who produce. I interpreted between Korean and English, ran color meetings with designers until the strike-off matched what they had in mind, and kept S/S and F/W sample printing on schedule for fashion houses and Broadway. I also rebuilt the studio’s website.</p>
+        <div class="clients"><span>Clients</span><b>Calvin Klein</b><b>Karl Lagerfeld</b><b>Ralph Lauren</b><b>Moulin Rouge! The Musical</b></div>
+        <div class="strip s3">
+          <button class="tile" data-img="media/img/p47-8237f48d60.jpg"><img src="media/img/p47-8237f48d60.jpg" alt="Moulin Rouge costume sequin fabric with color references" loading="lazy"><span class="cap">Moulin Rouge! · costume color match</span></button>
+          <button class="tile" data-img="media/img/p44-f64fb6aa14.jpg"><img src="media/img/p44-f64fb6aa14.jpg" alt="Karl Lagerfeld floral print strike-offs" loading="lazy"><span class="cap">Karl Lagerfeld · S/S 2024</span></button>
+          <button class="tile" data-img="media/img/p50-9c79c59eff.jpg"><img src="media/img/p50-9c79c59eff.jpg" alt="Ralph Lauren floral sample print" loading="lazy"><span class="cap">Ralph Lauren · S/S 2024</span></button>
+          <button class="tile" data-img="media/img/p52-7a10c289d7.jpg"><img src="media/img/p52-7a10c289d7.jpg" alt="Ralph Lauren patchwork sample print" loading="lazy"><span class="cap">Ralph Lauren · S/S 2024</span></button>
+          <button class="tile" data-img="media/img/p49-3829301790.jpg"><img src="media/img/p49-3829301790.jpg" alt="Ralph Lauren painterly floral sample print" loading="lazy"><span class="cap">Ralph Lauren · S/S 2024</span></button>
+          <button class="tile" data-img="media/img/p42-f2b426474f.jpg"><img src="media/img/p42-f2b426474f.jpg" alt="Floral print on coral ground" loading="lazy"><span class="cap">Custom dress print</span></button>
+        </div>
+        <div class="brands">
+          <div class="brand">
+            <h4>Client &amp; color</h4>
+            <div class="sub">Fashion houses, Broadway costume, independent designers</div>
+            <ul class="stat-list">
+              <li><b>KR ⇄ EN</b>interpreted meetings and translated documents between clients, designers and the production team</li>
+              <li><b>Color</b>led designer meetings and checked strike-offs until the printed color matched the brief</li>
+              <li><b>S/S · F/W</b>owned sample printing from first sample to final fabric</li>
+            </ul>
+          </div>
+          <div class="brand">
+            <h4>Marketing</h4>
+            <div class="sub">Studio brand and website</div>
+            <ul class="stat-list">
+              <li><b>Web</b>redesigned the website — home, about, services and gallery — and improved SEO</li>
+              <li><b>Social</b>planned and posted content across the studio’s social accounts</li>
+            </ul>
+          </div>
+        </div>
+        <div class="did"><span>Korean–English interpretation</span><span>Designer &amp; client meetings</span><span>Color matching</span><span>Sample printing</span><span>Website renewal &amp; SEO</span><span>Social media</span></div>
+      </div>
+    </article>
+
+    <!-- CASE 04 -->
+    <article class="case">
+      <div class="case-meta">
+        <div class="num">04</div>
         <b>Grand SK — Goldmiss</b>
         Brand Marketing Intern<br>Apr — Nov 2022<br>New Jersey
       </div>
@@ -386,7 +434,7 @@ footer .wrap{display:flex;justify-content:space-between}
     <ul class="xp">
       <li><div class="yr">Aug 2026 — Present</div><div class="co">QB Hospitality<small>Social Media &amp; Marketing Manager</small></div><div class="what">Social and paid ads for Angelina Bakery and ANTO Korean Kitchen, New York.</div></li>
       <li><div class="yr">Aug 2025 — May 2026</div><div class="co">Synerise Production<small>Second Videographer · Freelance</small></div><div class="what">Weddings and events — shooting alongside the lead and editing one-minute highlights.</div></li>
-      <li><div class="yr">Sep 2023 — Jul 2025</div><div class="co">Studio3eme<small>Marketing Coordinator</small></div><div class="what">Rebuilt the company website and led S/S and F/W sample printing for fashion clients including Ralph Lauren and Karl Lagerfeld.</div></li>
+      <li><div class="yr">Sep 2023 — Jul 2025</div><div class="co">Studio3eme<small>Marketing Coordinator</small></div><div class="what">Rebuilt the company website and led sample printing and color matching for Calvin Klein, Karl Lagerfeld, Ralph Lauren and Moulin Rouge! The Musical.</div></li>
       <li><div class="yr">Nov 2022 — Aug 2023</div><div class="co">Zillabeau<small>Lead Videographer</small></div><div class="what">Short-form and live content for a nail-supply brand; 1,000 hours of watch time in a month.</div></li>
       <li><div class="yr">Apr — Nov 2022</div><div class="co">Grand SK — Goldmiss<small>Brand Marketing Intern</small></div><div class="what">Brand renewal across social, store interior and website; 7x followers in 4 months.</div></li>
       <li><div class="yr">Sep 2021 — Jan 2022</div><div class="co">MOIN<small>Video Content Creator · Freelance</small></div><div class="what">Video marketing for a Seoul fintech; one video named the month’s most interesting content.</div></li>
