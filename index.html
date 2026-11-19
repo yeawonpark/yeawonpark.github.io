@@ -361,6 +361,12 @@ nav ul a{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-
 @media (max-width:900px){.namebox{display:block}.tag2{font-size:22px;margin-top:12px}}
 .namebox .bigname{line-height:.88}
 .namebox{gap:clamp(80px,12vw,180px)}
+.brandline{padding:44px 0 40px;border-bottom:1px solid var(--line)}
+.brandline .eyebrow{color:var(--ink-3);margin-bottom:18px;text-align:center}
+.brandline ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 44px;width:100%;margin:0 auto;font-family:var(--serif);font-size:clamp(22px,2.3vw,30px);line-height:1.2;color:var(--ink)}
+.brandline li{white-space:nowrap}
+.brandline li.br{flex-basis:100%;height:0}
+@media (max-width:560px){.brandline{padding:32px 0}.brandline ul{font-size:20px;gap:6px 24px}.brandline li.br{display:none}}
 </style>
 </head>
 <body>
@@ -438,6 +444,13 @@ nav ul a{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-
 
 
 
+
+<section class="brandline" aria-label="Brands I've worked with">
+  <div class="wrap">
+    <div class="eyebrow">Brands I’ve worked with</div>
+    <ul><li>DKNY</li><li>Calvin Klein</li><li>Ralph Lauren</li><li>Karl Lagerfeld</li><li>Moulin Rouge! The Musical</li><li class="br" aria-hidden="true"></li><li>COS</li><li>Oysho</li><li>Angelina Bakery</li><li>ANTO Korean Kitchen</li></ul>
+  </div>
+</section>
 
 <section id="work">
   <div class="wrap">
@@ -575,7 +588,7 @@ nav ul a{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-
       <div>
         <h3>The bridge between fashion designers, clients and the print floor.</h3>
         <p class="intro">At a New York textile print studio, I sat between the people who design and the people who produce. I interpreted between Korean and English, ran color meetings with designers until the strike-off matched what they had in mind, and kept S/S and F/W sample printing on schedule for fashion houses and Broadway. I also rebuilt the studio’s website.</p>
-        <div class="clients"><span>Studio clients</span><b>Calvin Klein</b><b>Karl Lagerfeld</b><b>Ralph Lauren</b><b>Moulin Rouge! The Musical</b></div>
+        <div class="clients"><span>Studio clients</span><b>DKNY</b><b>Calvin Klein</b><b>Karl Lagerfeld</b><b>Ralph Lauren</b><b>Moulin Rouge! The Musical</b></div>
         <div class="strip s3">
           <button class="tile" data-img="media/img/p47-8237f48d60.jpg"><img src="media/img/p47-8237f48d60.jpg" alt="Moulin Rouge costume sequin fabric with color references" loading="lazy"><span class="cap">Moulin Rouge! · costume color match</span></button>
           <button class="tile" data-img="media/img/p44-f64fb6aa14.jpg"><img src="media/img/p44-f64fb6aa14.jpg" alt="Karl Lagerfeld floral print strike-offs" loading="lazy"><span class="cap">Karl Lagerfeld · S/S 2024</span></button>
